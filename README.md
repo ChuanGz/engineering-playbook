@@ -19,6 +19,12 @@ A curated knowledge base for senior engineers, staff engineers, technical leads,
 
 This repository explains how professional software engineering should be practiced. Its guidance is technology-neutral unless a specific technology is necessary to clarify a decision.
 
+### Repository responsibility
+
+This repository owns technology-neutral decision methods, review practices, and evidence standards. It explains how engineers evaluate context, alternatives, trade-offs, risks, and outcomes. It does not own framework defaults, starter-project structure, package selection, generated code, or runtime-specific implementation contracts.
+
+Implementation repositories may apply these standards through concrete technology decisions and automated controls. Those repositories remain responsible for proving that their defaults work in their own runtime and delivery context.
+
 ### Included
 
 - requirement analysis and validation
