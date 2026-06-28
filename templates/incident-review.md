@@ -1,15 +1,45 @@
-# incident-review
+# Incident Review: [User-visible impact]
 
-## Context
+- **Incident window:**
+- **Review owner:**
+- **Affected users or operations:**
+- **Severity basis:**
 
-## Intended outcome
+## Impact
 
-## Evidence and constraints
+- Observable user, data, financial, or operational harm:
+- Detection source and delay:
+- Recovery time and remaining effects:
 
-## Decision or findings
+## Timeline
 
-## Trade-offs and risks
+| Time | Observable event or decision | Evidence source |
+| --- | --- | --- |
+| [Time] | [What happened, without speculation] | [Log, metric, message, or record] |
 
-## Actions and owners
+## System conditions
 
-## Validation
+- Trigger:
+- Conditions that allowed impact:
+- Conditions that increased detection or recovery time:
+- Controls that worked:
+
+Do not assign root cause to an individual action. Explain why the system allowed that action to create or extend harm.
+
+## Response review
+
+- What reduced impact:
+- What delayed or complicated response:
+- Data or state requiring reconciliation:
+
+## Corrective decisions
+
+| Action | Failure condition reduced | Observable completion | Owner | Priority |
+| --- | --- | --- | --- | --- |
+| [Action] | [Named condition] | [Pass evidence] | [Owner] | [Priority] |
+
+## Learning validation
+
+- Evidence that corrective actions work:
+- Recurrence or recovery exercise trigger:
+- Residual risk accepted by:

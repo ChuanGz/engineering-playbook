@@ -1,15 +1,38 @@
-# estimation
+# Estimate: [Outcome or delivery slice]
 
-## Context
+- **Prepared by:**
+- **Decision supported:** Prioritization | Capacity | Commitment | Discovery
+- **Estimate range:**
+- **Confidence:** Low | Medium | High
+- **Valid until:** [Scope or assumption change]
 
-## Intended outcome
+## Scope basis
 
-## Evidence and constraints
+- Intended outcome:
+- Included work:
+- Explicit exclusions:
+- Acceptance evidence:
 
-## Decision or findings
+## Breakdown
 
-## Trade-offs and risks
+| Slice or enabling work | Range | Evidence | Dependency |
+| --- | --- | --- | --- |
+| [Reviewable outcome] | [Range and unit] | [History, measurement, or judgment] | [Dependency] |
 
-## Actions and owners
+## Assumptions and unknowns
 
-## Validation
+| Item | Estimate impact | Validation action | Owner |
+| --- | --- | --- | --- |
+| [Assumption or unknown] | [Range change] | [Evidence needed] | [Owner] |
+
+## Included delivery cost
+
+[Address review, testing, migration, deployment, observability, documentation, and operational readiness where applicable.]
+
+## Confidence rationale
+
+[Explain why the range is credible and what would materially change it.]
+
+## Re-estimation triggers
+
+- [Scope, dependency, evidence, or constraint change]

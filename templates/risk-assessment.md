@@ -1,15 +1,37 @@
-# risk-assessment
+# Risk Assessment: [Harmful outcome]
 
-## Context
+- **Risk owner:**
+- **Assessment date:**
+- **Review trigger:**
 
-## Intended outcome
+## Risk statement
 
-## Evidence and constraints
+If **[cause or condition]**, then **[harmful outcome]** may affect **[users, data, service, or obligation]**.
 
-## Decision or findings
+## Evidence and exposure
 
-## Trade-offs and risks
+- Observed evidence or labeled assumption:
+- Affected boundary and blast radius:
+- Existing controls and their verified effectiveness:
 
-## Actions and owners
+## Assessment
 
-## Validation
+| Dimension | Rating | Reasoning and evidence |
+| --- | --- | --- |
+| Impact | Low/Medium/High/Critical | [Consequence] |
+| Likelihood | Low/Medium/High | [Evidence] |
+| Detectability | Easy/Moderate/Hard | [Signal and delay] |
+| Recovery | Easy/Moderate/Hard | [Action and time] |
+
+## Treatment options
+
+| Option | Risk reduction | Cost or new risk | Owner |
+| --- | --- | --- | --- |
+| Avoid/Reduce/Transfer/Accept | [Affected dimension] | [Trade-off] | [Owner] |
+
+## Decision and residual risk
+
+- Selected treatment and rationale:
+- Residual risk accepted by:
+- Monitoring and escalation trigger:
+- Expiry or reassessment condition:
