@@ -1,64 +1,136 @@
 # Engineering Playbook
 
-A practical software engineering handbook for senior engineers, staff engineers, technical leads, and software architects. It is the standards source for the wider engineering portfolio.
+> Practical engineering standards for making sound technical decisions and delivering maintainable software.
+
+`engineering-playbook` is a curated knowledge base for senior engineers, staff engineers, technical leads, and software architects. It captures the reasoning, review practices, and delivery standards that support the wider engineering portfolio.
+
+## What this playbook provides
+
+| Area | Outcome |
+| --- | --- |
+| Principles | Establish durable guidance without prescribing one solution everywhere. |
+| Decision frameworks | Make context, constraints, alternatives, and trade-offs explicit. |
+| Review practices | Evaluate requirements, designs, code, tests, and delivery readiness consistently. |
+| Checklists | Reduce avoidable omissions in recurring engineering work. |
+| Templates | Produce concise, reviewable engineering artifacts. |
+| Lessons learned | Turn production and delivery experience into reusable guidance. |
 
 ## Scope
 
-The playbook covers principles, decision frameworks, checklists, templates, practical guidance, and lessons learned. It excludes demo applications, framework tutorials, copied textbook patterns, speculative abstractions, and empty taxonomies.
+This repository explains how professional software engineering should be practiced. Its guidance is technology-neutral unless a specific technology is necessary to clarify a decision.
+
+### Included
+
+- requirement analysis and validation
+- system design and software architecture
+- maintainable implementation practices
+- testing strategy and code review
+- safe software delivery
+- durable technical documentation
+- engineering governance and decision-making
+
+### Excluded
+
+- demo applications and starter projects
+- framework-specific tutorials
+- textbook summaries without practical context
+- personal preferences presented as standards
+- pattern-driven or speculative architecture
+- large empty folder taxonomies
+
+## How the knowledge areas connect
+
+Engineering work is iterative. Requirements inform design; design guides implementation; testing and review provide evidence; delivery puts the change into operation; documentation preserves the decisions and feedback for the next cycle.
+
+```mermaid
+flowchart LR
+    R["Requirement analysis"] --> S["System design"]
+    S --> A["Architecture"]
+    A --> I["Implementation"]
+    I --> T["Testing"]
+    T --> C["Code review"]
+    C --> D["Delivery"]
+    D --> O["Operational feedback"]
+    O --> R
+
+    DOC["Documentation"] -. "records decisions" .-> R
+    DOC -. "records decisions" .-> A
+    DOC -. "records decisions" .-> D
+```
+
+## Explore the playbook
+
+### Repository standards
+
+| Area | Purpose |
+| --- | --- |
+| [Standards](standards/README.md) | Define writing, terminology, decision-record, and content-quality rules. |
+| [Templates](templates/README.md) | Provide reusable formats for reviews, decisions, risks, tests, and incidents. |
+
+### Engineering domains
+
+| Domain | Primary question |
+| --- | --- |
+| [Requirement analysis](docs/requirement-analysis/README.md) | Are we solving the right problem with clear, validated requirements? |
+| [System design](docs/system-design/README.md) | Does the proposed system satisfy its constraints and quality attributes? |
+| [Architecture](docs/architecture/README.md) | Will the system structure remain coherent as requirements evolve? |
+| [Implementation](docs/implementation/README.md) | Can the design become maintainable, production-quality software? |
+| [Testing](docs/testing/README.md) | What evidence is needed to trust the change? |
+| [Code review](docs/code-review/README.md) | Is the change correct, understandable, testable, and safe to maintain? |
+| [Delivery](docs/delivery/README.md) | Can the change reach users safely and recoverably? |
+| [Documentation](docs/documentation/README.md) | Can future engineers understand and operate what was decided? |
 
 ## Roadmap
+
+The repository grows through four maturity stages. Each milestone represents roughly two months of focused work, but quality—not elapsed time—determines completion.
+
+```mermaid
+flowchart LR
+    M1["1 · Foundation<br/>Core standards"] --> M2["2 · Senior practices<br/>Decisions and trade-offs"]
+    M2 --> M3["3 · Maturity<br/>Feedback and governance"]
+    M3 --> M4["4 · Applied judgment<br/>Real-case playbooks"]
+```
 
 ### Milestone 1 — Foundation and core engineering standards
 
 Build a small, useful foundation across requirements, design, architecture, implementation, testing, review, delivery, and documentation.
 
-### Milestone 2 — High-value senior engineering sections
+### Milestone 2 — High-value senior engineering practices
 
-Add clarification, ambiguity detection, scope breakdown, estimation, validation, risk analysis, design review, decision records, and common failures.
+Add requirement clarification, ambiguity detection, scope breakdown, estimation, validation, risk analysis, trade-off analysis, design review, architecture decisions, and common failure modes.
 
 ### Milestone 3 — Maturity, feedback, and governance
 
-Improve consistency, terminology, quality review, maturity assessment, contribution gates, and governance.
+Improve content consistency, terminology, review quality, maturity assessment, contribution gates, and repository governance.
 
 ### Milestone 4 — Practical real-case playbooks
 
-Add reviewed cases covering requirements, estimation, scope reduction, architecture decisions, reviews, incidents, delivery risks, and leadership.
+Apply the guidance to reviewed cases involving requirements, estimation, scope reduction, architecture decisions, code review, incidents, delivery risks, and technical leadership.
 
-## Evolution
+See [ROADMAP.md](ROADMAP.md) for the maintained roadmap.
 
-```text
-Foundation
-   ↓
-Senior Engineering Practices
-   ↓
-Maturity and Governance
-   ↓
-Real-Case Playbooks
-```
+## Engineering principles
 
-```mermaid
-flowchart TD
-    A["Foundation"] --> B["Senior Engineering Practices"]
-    B --> C["Maturity and Governance"]
-    C --> D["Real-Case Playbooks"]
-```
-
-## Document index
-
-- [Standards](standards/README.md) — repository-wide writing and quality rules.
-- [Templates](templates/README.md) — reusable review and decision formats.
-- [Requirement analysis](docs/requirement-analysis/README.md) — clarify and validate requirements.
-- [System design](docs/system-design/README.md) — frame systems and compare trade-offs.
-- [Architecture](docs/architecture/README.md) — guide boundaries and evolution.
-- [Implementation](docs/implementation/README.md) — build maintainable production software.
-- [Testing](docs/testing/README.md) — select evidence proportionate to risk.
-- [Code review](docs/code-review/README.md) — review correctness, design, and risk.
-- [Delivery](docs/delivery/README.md) — deliver changes safely.
-- [Documentation](docs/documentation/README.md) — preserve engineering context.
+1. Start with the problem, context, and constraints.
+2. Make decisions from evidence and explicit trade-offs.
+3. Prefer the simplest approach that satisfies current requirements.
+4. Add abstractions, rules, and processes only when they solve a concrete problem.
+5. Validate assumptions before implementation and outcomes after delivery.
+6. Treat documentation as part of the engineering system.
+7. Evolve guidance through production evidence and respectful review.
 
 ## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Contributions are curated for evidence, practical value, and respectful collaboration.
+Contributions are welcome when they improve correctness, clarity, or practical usefulness. This repository is curated; it is not a personal blog, discussion forum, or technology debate space.
+
+Read the [contributing rules](CONTRIBUTING.md) before opening an issue or pull request. Submissions must provide practical context, clear reasoning, relevant trade-offs, and a professional collaboration standard.
+
+## Project governance
+
+- [Governance](GOVERNANCE.md) — ownership and decision authority
+- [Code of Conduct](CODE_OF_CONDUCT.md) — collaboration expectations
+- [Security Policy](SECURITY.md) — private vulnerability reporting
+- [Changelog](CHANGELOG.md) — notable repository changes
 
 ## License
 
