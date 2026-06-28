@@ -21,6 +21,7 @@ Testing provides evidence about a named risk. Test count, coverage percentage, a
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- Which consequential failure does each test or control detect?
+- Does the selected test boundary include every component capable of causing that failure?
+- Will a failure provide diagnostic evidence and an accountable next action?
+- Which residual risks require staged rollout or production validation?

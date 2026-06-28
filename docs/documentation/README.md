@@ -20,6 +20,7 @@ Documentation is maintained engineering infrastructure. A document is justified 
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- Can the named reader complete a task or decision using this document?
+- Do material claims trace to authoritative evidence or labeled assumptions?
+- Does the document add distinct value instead of copying another source of truth?
+- Which owner or change event will update, supersede, or remove it?

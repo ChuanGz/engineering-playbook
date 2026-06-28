@@ -19,6 +19,7 @@ Confirm stakeholders, constraints, acceptance criteria, dependencies, gaps, risk
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- Does the requirement state an observable outcome rather than only a requested solution?
+- Are ambiguity, exclusions, assumptions, dependencies, and decision ownership visible?
+- Can acceptance evidence distinguish success from implementation completion?
+- Will a material scope or assumption change trigger impact analysis and re-estimation?

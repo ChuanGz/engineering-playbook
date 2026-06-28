@@ -26,17 +26,17 @@ Establish the minimum useful engineering handbook: substantive domain guidance, 
 
 M1 is complete only when all criteria are supported by repository evidence:
 
-- [ ] Each of the eight domains has an index and a minimum substantive guide set.
-- [ ] Domain guides support real decisions and include applicability, trade-offs, failure modes, and review evidence where relevant.
-- [ ] No domain is represented only by placeholders, generic advice, or empty taxonomy.
-- [ ] The document contract defines reader, problem, outcome, evidence, type, scope, and ownership.
-- [ ] Writing, content quality, terminology, decision-record, and contribution-review standards have enforceable acceptance criteria.
-- [ ] Every template has a distinct decision purpose, domain-specific evidence, ownership, and pass conditions.
-- [ ] Contribution, conduct, governance, security, changelog, license, and GitHub community files are present.
-- [ ] Root and domain navigation resolve to existing content.
-- [ ] Repository-wide Markdown lint and internal-link validation pass.
-- [ ] GitHub Actions validates Markdown successfully on the default branch.
-- [ ] A senior-quality audit finds no critical generic-content, duplication, or unsupported-standard gap.
+- [x] Each of the eight domains has an index and a minimum substantive guide set.
+- [x] Domain guides support real decisions and include applicability, trade-offs, failure modes, and review evidence where relevant.
+- [x] No domain is represented only by placeholders, generic advice, or empty taxonomy.
+- [x] The document contract defines reader, problem, outcome, evidence, type, scope, and ownership.
+- [x] Writing, content quality, terminology, decision-record, and contribution-review standards have enforceable acceptance criteria.
+- [x] Every template has a distinct decision purpose, domain-specific evidence, ownership, and pass conditions.
+- [x] Contribution, conduct, governance, security, changelog, license, and GitHub community files are present.
+- [x] Root and domain navigation resolve to existing content.
+- [x] Repository-wide Markdown lint and internal-link validation pass.
+- [x] GitHub Actions validates Markdown successfully on the default branch.
+- [x] A senior-quality audit finds no critical generic-content, duplication, or unsupported-standard gap.
 
 ### Non-goals
 

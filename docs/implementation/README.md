@@ -22,6 +22,7 @@ Implementation guidance applies after outcomes and boundaries are understood. It
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- Are business invariants and state transitions enforced at their owning boundary?
+- Does each abstraction protect a current variation, dependency, or failure risk?
+- Are error, cancellation, concurrency, observability, and recovery behaviors explicit where relevant?
+- Can behavior evidence survive safe internal refactoring?

@@ -21,6 +21,7 @@ Code review is a risk decision about a specific change. It is not a contest over
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- Does every blocking finding identify a concrete risk or unmet requirement?
+- Are correctness, security, data, operational, and maintainability risks prioritized over style?
+- Does the reviewed evidence cover the changed behavior and boundaries?
+- Are approvals, follow-ups, accepted risks, and escalations explicitly disposed?

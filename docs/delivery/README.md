@@ -21,6 +21,7 @@ Delivery guidance governs how accepted changes become observable user outcomes. 
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- Does the release evidence cover the ways this change can harm users, data, or operations?
+- Can the deployed artifact be traced to reviewed source and validated configuration?
+- Are rollout, stop, containment, rollback, and reconciliation decisions executable?
+- Who accepts residual risk and owns production outcome verification?

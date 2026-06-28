@@ -21,6 +21,7 @@ The guides in this domain are decision frameworks. They do not prescribe a syste
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- Which measured constraint or quality scenario can change the design shape?
+- Are workload assumptions, state authority, and critical boundaries explicit?
+- What happens during partial failure, retry, recovery, and reconciliation?
+- Which test or production signal will validate the design-driving assumptions?

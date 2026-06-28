@@ -21,6 +21,7 @@ Architecture guidance applies when a structural choice affects multiple changes,
 
 ## Review questions
 
-- Is the context and intended outcome explicit?
-- Are alternatives and trade-offs recorded?
-- Can the decision be validated and maintained?
+- What recurring change or runtime pressure justifies a structural decision?
+- Are responsibility, state authority, dependency direction, and operational ownership aligned?
+- Was the simplest credible structure compared under the same constraints?
+- Which observable change will trigger evolution or reconsideration?
