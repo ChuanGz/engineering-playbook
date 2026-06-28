@@ -2,7 +2,7 @@
 
 > Practical engineering standards for making sound technical decisions and delivering maintainable software.
 
-`engineering-playbook` is a curated knowledge base for senior engineers, staff engineers, technical leads, and software architects. It captures the reasoning, review practices, and delivery standards that support the wider engineering portfolio.
+A curated knowledge base for senior engineers, staff engineers, technical leads, and software architects. It captures the reasoning, review practices, and delivery standards that support the wider engineering portfolio.
 
 ## What this playbook provides
 
