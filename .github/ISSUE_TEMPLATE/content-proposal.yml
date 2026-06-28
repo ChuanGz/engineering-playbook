@@ -1,0 +1,10 @@
+name: Content proposal
+description: Propose a substantial addition or change
+title: "[Proposal] "
+body:
+  - type: textarea
+    attributes:
+      label: Engineering context
+      description: What real problem should this guidance address?
+    validations:
+      required: true

@@ -1,0 +1,10 @@
+name: Content correction
+description: Report inaccurate or unclear guidance
+title: "[Correction] "
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: Identify the content and provide supporting evidence.
+    validations:
+      required: true
