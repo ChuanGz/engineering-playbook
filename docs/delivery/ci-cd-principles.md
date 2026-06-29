@@ -12,7 +12,7 @@ Create an immutable artifact from a traceable revision. Do not rebuild per envir
 
 ### Fail on actionable evidence
 
-Required checks must identify a responsible owner and corrective action. Unreliable gates train teams to ignore red status.
+For each required check, identify a responsible owner and corrective action. Unreliable gates train teams to ignore red status.
 
 ### Keep configuration differences explicit
 

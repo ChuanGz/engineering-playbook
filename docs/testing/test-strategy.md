@@ -1,5 +1,9 @@
 # Test Strategy
 
+## At a glance
+
+Developers, testers, reviewers, and release owners use this guide to decide what evidence is worth paying for. Start from credible harmful outcomes and changed boundaries, then choose the cheapest evidence that can detect them. Test count and framework coverage are not the goal.
+
 ## Decision supported
 
 Allocate validation effort and release evidence according to the ways a change can fail and the consequence of those failures.
@@ -13,7 +17,7 @@ Allocate validation effort and release evidence according to the ways a change c
 - historical defects and production incidents;
 - release reversibility and detection time.
 
-When project evidence is missing, label the strategy as provisional and identify what production or domain review must confirm.
+When project evidence is missing, label the strategy as provisional and identify what production or domain review needs to confirm.
 
 ## Method
 
@@ -43,3 +47,7 @@ Broader validation lowers residual uncertainty but increases feedback time and m
 - [ ] Required environments and data are available and controlled.
 - [ ] Release gates have objective pass conditions.
 - [ ] Residual risk and production validation are accepted explicitly.
+
+## Maintenance trigger
+
+Review this guide when escaped failures reveal an uncovered risk, or when tests consume time without influencing a release, design, or recovery decision.

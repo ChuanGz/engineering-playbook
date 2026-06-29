@@ -1,10 +1,46 @@
 name: Content proposal
-description: Propose a substantial addition or change
+description: Propose practical guidance, a lesson, or a substantial change
 title: "[Proposal] "
 body:
   - type: textarea
     attributes:
-      label: Engineering context
-      description: What real problem should this guidance address?
+      label: Reader and situation
+      description: Who needs this guidance, what do they already know, and when will they use it?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Decision, task, or failure
+      description: What concrete outcome should become easier or safer?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Evidence and uncertainty
+      description: Link evidence where possible and label assumptions or missing domain review.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Smallest useful change
+      description: What is the minimum guidance, correction, or experiment that could help?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Applicability and signals
+      description: When should this not be used, and what would show benefit, harm, or irrelevance?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Learning and privacy
+      description: If this comes from a failed outcome, explain the system conditions and how sensitive information is protected.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Ownership and maintenance
+      description: What person, role, evidence change, or event should trigger review?
     validations:
       required: true

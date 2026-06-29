@@ -1,6 +1,10 @@
 # Engineering Domains
 
-These domains follow the path from understanding a problem to preserving delivery knowledge. Each index links to decision-oriented guides rather than placeholder taxonomy.
+Use [Ways of Working](ways-of-working/README.md) if you want to start from a role, delivery moment, or practical journey. Use this index when you already know the engineering decision you need to make or review.
+
+Leaders applying the playbook across teams can start with [Scaling Without Bureaucracy](ways-of-working/scaling-without-bureaucracy.md).
+
+These domains are the authoritative sources. Scrum, Kanban, and role-based paths link here rather than copying the guidance.
 
 | Domain | Decision focus |
 | --- | --- |
@@ -12,5 +16,6 @@ These domains follow the path from understanding a problem to preserving deliver
 | [Code review](code-review/README.md) | Decide whether a specific change is safe and understandable enough to merge. |
 | [Delivery](delivery/README.md) | Release traceable artifacts with explicit risk, rollout, and recovery controls. |
 | [Documentation](documentation/README.md) | Preserve the tasks, contracts, decisions, and recovery knowledge worth maintaining. |
+| [Ways of working](ways-of-working/README.md) | Connect these decisions across real delivery situations and learning loops. |
 
 Start with the domain that owns the current decision. Follow cross-domain links only when the change introduces those concerns; the playbook is not a mandatory sequential process.

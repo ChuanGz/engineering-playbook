@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Accept contributions that add durable engineering value while preventing the repository from becoming an opinion board, tutorial dump, or collection of AI-generated filler.
+Help contributors turn observations, decisions, and lessons into durable engineering value while preventing unsupported or duplicated guidance from becoming authoritative.
 
 ## Review order
 
@@ -11,7 +11,8 @@ Accept contributions that add durable engineering value while preventing the rep
 3. **Engineering quality:** Are claims correct, contextual, and supported by meaningful trade-offs?
 4. **Distinct value:** Does it improve an existing document or justify a new artifact?
 5. **Operational truth:** Does it account for ownership, failure, maintenance, and feedback where relevant?
-6. **Editorial consistency:** Do structure, terminology, links, and Markdown meet standards?
+6. **Learning value:** If it reports an outcome or experiment, are system conditions, evidence, uncertainty, and the next learning decision visible?
+7. **Editorial consistency:** Do structure, terminology, links, and Markdown meet standards?
 
 Do not spend editorial effort polishing content that fails scope or engineering-quality gates.
 
@@ -22,9 +23,21 @@ Do not spend editorial effort polishing content that fails scope or engineering-
 - **Suggestion:** optional clarity or usability improvement.
 - **Preference:** personal choice with no demonstrated quality impact; never a merge blocker.
 
-## Rejection criteria
+## Learning contributions
 
-Reject or close contributions that:
+Accept a failed experiment or poor outcome when it:
+
+- distinguishes intended and observed results;
+- uses available evidence and labels hypotheses;
+- describes system conditions instead of blaming an individual;
+- protects confidential, personal, customer, security, and commercial information;
+- records what should be kept, adapted, stopped, escalated, or tried next.
+
+No-blame language does not remove accountability for material decisions, required reporting, or owned corrective work.
+
+## Decline or redirect
+
+Decline, redirect, or request revision when contributions:
 
 - add noise, unsupported opinion, promotion, or unrelated debate;
 - copy textbook or generated summaries without real decision value;
@@ -40,6 +53,7 @@ Reject or close contributions that:
 - [ ] Review findings identify concrete risks and pass conditions.
 - [ ] Mandatory changes derive from repository standards, not reviewer preference.
 - [ ] New files have unique reader value and maintenance ownership.
+- [ ] Learning contributions protect people while preserving decision accountability.
 - [ ] Automated checks pass after substantive review succeeds.
 
 ## Maintenance trigger

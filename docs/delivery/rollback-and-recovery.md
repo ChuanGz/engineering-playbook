@@ -1,5 +1,28 @@
 # Rollback and Recovery
 
+## At a glance
+
+Release owners, operators, engineers, and accountable leaders use this guide to reduce harm when a release fails. A previous artifact is not a complete rollback if data, configuration, contracts, or external effects cannot move backward safely; containment, roll-forward, or reconciliation may be required.
+
+## Recovery decision tree
+
+This model answers: **When is rollback safer than containment, roll-forward, or state repair?**
+
+```mermaid
+flowchart LR
+    H["Harm detected"] --> R{"All effects safely reversible?"}
+    R -->|Yes| B["Rollback"]
+    R -->|No| C["Contain harm"]
+    C --> F{"Correction safer now?"}
+    F -->|Yes| W["Roll forward"]
+    F -->|No| S["Stabilize service"]
+    S --> Q["Reconcile state"]
+```
+
+> **Working maxim:** A previous artifact is not a rollback when state cannot move back.
+
+Contain first when the state is uncertain. Diagnosis can continue after the harmful path is bounded.
+
 ## Decision supported
 
 Select the fastest safe action to reduce harm after a release when software, data, contracts, or external effects may not be reversible together.
@@ -21,6 +44,10 @@ Select the fastest safe action to reduce harm after a release when software, dat
 5. Preserve evidence while reducing impact; do not delay recovery for full root cause.
 6. Verify service and data state after action, then reconcile affected work.
 
+## Simplified example
+
+A release writes a new schema that the previous binary cannot read. Redeploying that binary would deepen the outage. Stop new writes, deploy a compatible correction, verify state, and reconcile work accepted during the failure window.
+
 ## Trade-offs
 
 Backward-compatible migration preserves rollback but requires temporary dual support. Fast roll-forward avoids backward constraints but depends on diagnosis and deployment speed.
@@ -38,3 +65,7 @@ Backward-compatible migration preserves rollback but requires temporary dual sup
 - [ ] Trigger, authority, procedure, and verification are explicit.
 - [ ] Irreversible effects have containment and reconciliation plans.
 - [ ] Recovery capability has been exercised at realistic boundaries.
+
+## Maintenance trigger
+
+Review this guide after a recovery exercise or incident exposes a missing trigger, authority, permission, compatibility assumption, or state-repair path.

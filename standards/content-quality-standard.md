@@ -26,6 +26,16 @@ Every document must enable at least one of these outcomes:
 - prevent, detect, or recover from a named failure;
 - understand a system behavior necessary for safe change.
 
+For a proposed practice, also make its adoption decision reviewable:
+
+- why the practice matters in the stated context;
+- which observed pain or risk it reduces;
+- the smallest useful trial;
+- the signal that would show benefit or harm;
+- when the practice should not be used or should be removed.
+
+Visuals, examples, and maxims inherit the same decision-value requirement. They are accepted only when they reduce explanation cost, expose a relationship, or help the reader choose or verify an action. Attractive formatting, emotional tone, and technology familiarity are not evidence of value.
+
 ## Required reasoning
 
 Include applicability, non-applicability, alternatives, negative consequences, failure modes, and validation when they can change the decision. Do not force identical headings when a document type does not need them.
@@ -38,6 +48,7 @@ Include applicability, non-applicability, alternatives, negative consequences, f
 - Checklists without observable pass conditions.
 - Repeated skeletons whose sections contain no domain-specific judgment.
 - Claims of maturity based only on file count, format, lint, or tooling.
+- Diagrams, examples, or slogans that can be removed without changing reader understanding or action.
 
 ## Acceptance evidence
 

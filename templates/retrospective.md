@@ -23,15 +23,23 @@
 | --- | --- | --- |
 | [Condition, not person] | [Delay, defect, rework, or risk] | [Yes/No/Shared] |
 
-## Improvement decision
+## Improvement experiment
 
-- Selected change:
-- Problem it addresses:
+- Condition to change:
+- Smallest reversible action:
 - Why this option over alternatives:
 - Owner and start trigger:
-- Success evidence and review date:
+- Expected benefit signal:
+- Possible cost or negative signal:
+- Review date or observable review trigger:
 
-Choose a small number of actions the team can actually own. Discussion without an observable experiment is not an improvement decision.
+Choose one or two experiments the team can actually own. Discussion without an observable experiment is not an improvement decision. An experiment is not a permanent policy.
+
+## Experiment review
+
+- Evidence observed:
+- Disposition: Keep | Adapt | Stop | Escalate
+- Reason and next decision:
 
 ## Escalations
 

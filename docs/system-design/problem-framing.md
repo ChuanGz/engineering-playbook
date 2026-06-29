@@ -1,8 +1,28 @@
 # Problem Framing
 
+## At a glance
+
+Product, business, and technical leaders use this guide before choosing a solution. It makes the intended outcome, decision owner, costly failure, and design-changing constraints visible. The next step is a problem frame that another person can review without assuming the requested technology is the requirement.
+
+## Framing funnel
+
+This model answers: **Which inputs are strong enough to shape the solution decision?**
+
+```mermaid
+flowchart LR
+    O["Required outcome"] --> F["Problem frame"]
+    C["Fixed constraints"] --> F
+    Q["Quality scenarios"] --> F
+    U["Material unknowns"] --> F
+    F --> D["Next design decision"]
+    F --> V["Validation needed"]
+```
+
+Requested technologies and preferred patterns stay outside the frame until evidence shows that they are fixed constraints rather than solution ideas.
+
 ## Decision supported
 
-Determine what the system must achieve and which constraints can change the design before selecting architecture, storage, messaging, or infrastructure.
+Determine the required system outcome and which constraints can change the design before selecting architecture, storage, messaging, or infrastructure.
 
 ## Required evidence
 
@@ -12,7 +32,7 @@ Determine what the system must achieve and which constraints can change the desi
 - Functional scope, non-goals, and external dependencies.
 - Quality attributes expressed as scenarios rather than adjectives.
 
-Replace “highly available” with a scenario such as the affected operation, failure condition, acceptable interruption, recovery target, and measurement source. Numbers without evidence remain assumptions and must be labeled.
+Replace “highly available” with a scenario such as the affected operation, failure condition, acceptable interruption, recovery target, and measurement source. Label numbers without evidence as assumptions.
 
 ## Framing method
 
@@ -41,3 +61,7 @@ More framing reduces solution churn but delays technical learning when uncertain
 - [ ] Design-driving quality scenarios have measurable acceptance evidence.
 - [ ] Fixed constraints, assumptions, and unknowns are separately visible.
 - [ ] The next design decision and its owner are explicit.
+
+## Maintenance trigger
+
+Review this guide when repeated design reviews still discover disputed outcomes, hidden constraints, or invented quality targets after framing.

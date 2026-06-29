@@ -1,8 +1,12 @@
 # Design Review
 
+## At a glance
+
+Engineers, affected domain owners, and accountable leaders use this guide to decide whether a consequential design is ready for implementation. The review should expose one success flow, one material failure flow, unresolved risk, and who has authority to accept it.
+
 ## Decision supported
 
-Determine whether a proposed design has enough evidence and operational clarity to enter implementation, or whether a specific unresolved risk must be addressed first.
+Determine whether a proposed design has enough evidence and operational clarity to enter implementation, or whether a specific unresolved risk needs to be addressed first.
 
 ## Review inputs
 
@@ -41,3 +45,7 @@ Review reduces blind spots and shared-risk decisions, but large review groups ca
 - [ ] Critical flows, failures, and recovery have accountable owners.
 - [ ] Blocking findings are resolved or explicitly accepted by the decision owner.
 - [ ] Decisions, follow-ups, and reconsideration triggers are recorded.
+
+## Maintenance trigger
+
+Review this guide when approved designs repeatedly fail at unexamined boundaries, state transitions, ownership handoffs, or recovery paths.

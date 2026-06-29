@@ -16,7 +16,7 @@ Assess:
 - rollout controls, success thresholds, and recovery capability;
 - timing constraints and affected stakeholder communication.
 
-Absence of known defects is not evidence of readiness. Required evidence must reflect how the release can fail.
+Absence of known defects is not evidence of readiness. Define required evidence from the ways the release can fail.
 
 ## Decision guide
 

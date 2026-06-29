@@ -6,7 +6,7 @@ Choose a change and integration workflow that preserves intent, enables effectiv
 
 ## Workflow requirements
 
-A workflow must define:
+A reviewable workflow defines:
 
 - the unit of review and accountable author;
 - required evidence before integration;

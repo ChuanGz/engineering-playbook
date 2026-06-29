@@ -1,135 +1,109 @@
 # Engineering Playbook
 
-> Practical engineering standards for making sound technical decisions and delivering maintainable software.
+> Practical ways to make sound engineering decisions, deliver safely, and learn without blame.
 
-A curated knowledge base for senior engineers, staff engineers, technical leads, and software architects. It captures the reasoning, review practices, and delivery standards that support the wider engineering portfolio.
+This playbook helps people make better software decisions together. You do not need to read it from beginning to end, follow one delivery framework, or hold an engineering title to use it.
+
+## The decision-to-learning loop
+
+This model answers: **How does the playbook move from a problem to better future decisions?**
+
+```mermaid
+flowchart LR
+    P["Problem"] --> E["Evidence"]
+    E --> O["Options"]
+    O --> D["Decision"]
+    D --> X["Delivery"]
+    X --> F["Feedback"]
+    F --> L["Learning"]
+    L --> P
+```
+
+> **Working maxim:** Use the smallest practice that protects a named outcome.
+
+The loop is the stable core. Guides and templates add only the reasoning or evidence needed at the current decision.
+
+## Start with what you need
+
+| If you need to... | Start here | Useful outcome |
+| --- | --- | --- |
+| Turn an unclear idea into workable scope | [Clarify an idea](docs/ways-of-working/README.md#1-from-an-unclear-idea-to-a-testable-slice) | A small, testable outcome with visible assumptions. |
+| Decide whether a risky change is ready | [Take a risky change to release](docs/ways-of-working/README.md#2-from-a-risky-change-to-a-safe-release) | Shared evidence for implementation, release, and recovery. |
+| Learn from a poor outcome or incident | [Learn without blame](docs/ways-of-working/README.md#3-from-an-outcome-to-a-learning-experiment) | One owned experiment with a success signal and review date. |
+| Find guidance for the current work step | [Follow the delivery flow](docs/ways-of-working/delivery-flow.md) | The relevant decision guide without adopting a new process. |
+| Look up a technical decision method | [Browse engineering domains](docs/README.md) | Detailed reasoning, trade-offs, and review evidence. |
+
+## Start with your role
+
+Each path points to the same authoritative guides. The role changes the question you bring, not the engineering truth.
+
+| You are... | Begin with... | Focus on... |
+| --- | --- | --- |
+| New to software delivery or joining a team | [Ways of working](docs/ways-of-working/README.md) | What decision is being made, why it matters, and what happens next. |
+| Developer or reviewer | [Implementation](docs/implementation/README.md), [testing](docs/testing/README.md), and [code review](docs/code-review/README.md) | Correctness, maintainability, evidence, and safe change. |
+| Product owner or product practitioner | [Requirement analysis](docs/requirement-analysis/README.md) and [scope breakdown](docs/requirement-analysis/scope-breakdown.md) | User outcome, scope, uncertainty, and validation. |
+| Engineering lead or architect | [System design](docs/system-design/README.md), [architecture](docs/architecture/README.md), and [scaling without bureaucracy](docs/ways-of-working/scaling-without-bureaucracy.md) | Trade-offs, ownership, risk, and evolution. |
+| CIO, CEO, or business leader | [Problem framing](docs/system-design/problem-framing.md), [delivery risk](docs/delivery/delivery-risk.md), and [scaling without bureaucracy](docs/ways-of-working/scaling-without-bureaucracy.md) | Business consequence, decision ownership, exposure, and recovery. |
+
+Leaders should be able to understand the decision, consequence, risk, and owner without reading implementation detail. Deep technical guides remain written for the people who apply or review that detail.
+
+## Use it with Scrum, Kanban, or a hybrid
+
+The playbook is workflow-first. It starts from decisions that delivery teams face, then shows where those decisions may occur in Scrum, Kanban, continuous flow, or a hybrid model.
+
+- Scrum events are possible decision touchpoints, not mandatory containers for every practice.
+- Kanban policies and feedback loops can expose the same decisions without copying the guidance.
+- Hybrid teams can select the smallest useful practice at the moment it is needed.
+- The domain guide remains the authoritative source; framework mappings are navigation aids.
+
+See [Delivery Flow](docs/ways-of-working/delivery-flow.md) for the mapping.
+
+## How each guide should work
+
+The playbook uses progressive depth so readers can stop when they have enough information:
+
+1. **Understand** — the problem, why it matters, and the consequence of ignoring it.
+2. **Apply** — the smallest useful action, evidence, or template for the current situation.
+3. **Deep dive** — alternatives, trade-offs, failure modes, and technical review detail.
+
+Not every guide needs identical headings. Every guide does need a clear reader outcome.
 
 ## What this playbook provides
 
 | Area | Outcome |
 | --- | --- |
-| Principles | Establish durable guidance without prescribing one solution everywhere. |
-| Decision frameworks | Make context, constraints, alternatives, and trade-offs explicit. |
-| Review practices | Evaluate requirements, designs, code, tests, and delivery readiness consistently. |
-| Checklists | Reduce avoidable omissions in recurring engineering work. |
-| Templates | Produce concise, reviewable engineering artifacts. |
-| Lessons learned | Turn production and delivery experience into reusable guidance. |
+| Principles | Durable decision heuristics with stated limits and costs. |
+| Decision frameworks | Explicit context, constraints, alternatives, and trade-offs. |
+| Review practices | Proportionate evaluation of requirements, designs, code, tests, and delivery. |
+| Templates | Concise artifacts that make consequential work reviewable. |
+| Learning practices | Evidence-based improvement without assigning personal blame. |
+| Ways of working | Practical entry points that do not require one delivery framework. |
 
-## Scope
+## Scope and responsibility
 
-This repository explains how professional software engineering should be practiced. Its guidance is technology-neutral unless a specific technology is necessary to clarify a decision.
+This repository owns technology-neutral decision methods, review practices, and evidence standards. It does not own framework defaults, starter-project structure, package selection, generated code, or runtime-specific implementation contracts.
 
-### Repository responsibility
+Implementation repositories may apply this guidance through concrete technology choices and automated controls. They remain responsible for proving that their defaults work in their own runtime and delivery context.
 
-This repository owns technology-neutral decision methods, review practices, and evidence standards. It explains how engineers evaluate context, alternatives, trade-offs, risks, and outcomes. It does not own framework defaults, starter-project structure, package selection, generated code, or runtime-specific implementation contracts.
+The playbook includes requirement analysis, design, architecture, implementation, testing, review, delivery, documentation, decision governance, and learning from outcomes. It excludes framework-specific tutorials, textbook summaries without a practical decision, personal preference presented as policy, and speculative architecture.
 
-Implementation repositories may apply these standards through concrete technology decisions and automated controls. Those repositories remain responsible for proving that their defaults work in their own runtime and delivery context.
+## Browse the sources
 
-### Included
-
-- requirement analysis and validation
-- system design and software architecture
-- maintainable implementation practices
-- testing strategy and code review
-- safe software delivery
-- durable technical documentation
-- engineering governance and decision-making
-
-### Excluded
-
-- demo applications and starter projects
-- framework-specific tutorials
-- textbook summaries without practical context
-- personal preferences presented as standards
-- pattern-driven or speculative architecture
-- large empty folder taxonomies
-
-## How the knowledge areas connect
-
-Engineering work is iterative. Requirements inform design; design guides implementation; testing and review provide evidence; delivery puts the change into operation; documentation preserves the decisions and feedback for the next cycle.
-
-```mermaid
-flowchart LR
-    R["Requirement analysis"] --> S["System design"]
-    S --> A["Architecture"]
-    A --> I["Implementation"]
-    I --> T["Testing"]
-    T --> C["Code review"]
-    C --> D["Delivery"]
-    D --> O["Operational feedback"]
-    O --> R
-
-    DOC["Documentation"] -. "records decisions" .-> R
-    DOC -. "records decisions" .-> A
-    DOC -. "records decisions" .-> D
-```
-
-## Explore the playbook
-
-### Repository standards
-
-| Area | Purpose |
+| Source | Purpose |
 | --- | --- |
-| [Standards](standards/README.md) | Define writing, terminology, decision-record, and content-quality rules. |
-| [Templates](templates/README.md) | Provide reusable formats for reviews, decisions, risks, tests, and incidents. |
+| [Ways of working](docs/ways-of-working/README.md) | Enter through a real situation and connect practices across domains. |
+| [Scaling without bureaucracy](docs/ways-of-working/scaling-without-bureaucracy.md) | Apply stable principles across teams while keeping context-specific decisions local. |
+| [Engineering domains](docs/README.md) | Find the authoritative guide for a technical decision. |
+| [Standards](standards/README.md) | Review content quality, language, evidence, and maintenance. |
+| [Templates](templates/README.md) | Record decisions, risks, reviews, incidents, and improvement experiments. |
+| [Roadmap](ROADMAP.md) | See current priorities and evidence-based completion criteria. |
+| [Content audit](CONTENT_AUDIT.md) | See what is ready, what needs adaptation, and why the current result is partial. |
 
-### Engineering domains
+## Contribute a useful lesson
 
-| Domain | Primary question |
-| --- | --- |
-| [Requirement analysis](docs/requirement-analysis/README.md) | Are we solving the right problem with clear, validated requirements? |
-| [System design](docs/system-design/README.md) | Does the proposed system satisfy its constraints and quality attributes? |
-| [Architecture](docs/architecture/README.md) | Will the system structure remain coherent as requirements evolve? |
-| [Implementation](docs/implementation/README.md) | Can the design become maintainable, production-quality software? |
-| [Testing](docs/testing/README.md) | What evidence is needed to trust the change? |
-| [Code review](docs/code-review/README.md) | Is the change correct, understandable, testable, and safe to maintain? |
-| [Delivery](docs/delivery/README.md) | Can the change reach users safely and recoverably? |
-| [Documentation](docs/documentation/README.md) | Can future engineers understand and operate what was decided? |
+Contributions are welcome when they help a named reader make a decision, complete a task, reduce a risk, or learn from an observed outcome. A failed experiment can be valuable evidence when it explains system conditions, protects sensitive information, and proposes what to try next.
 
-## Roadmap
-
-The repository grows through four maturity stages. Each milestone represents roughly two months of focused work, but quality—not elapsed time—determines completion.
-
-```mermaid
-flowchart LR
-    M1["1 · Foundation<br/>Core standards"] --> M2["2 · Senior practices<br/>Decisions and trade-offs"]
-    M2 --> M3["3 · Maturity<br/>Feedback and governance"]
-    M3 --> M4["4 · Applied judgment<br/>Real-case playbooks"]
-```
-
-### Milestone 1 — Foundation and core engineering standards
-
-Build a small, useful foundation across requirements, design, architecture, implementation, testing, review, delivery, and documentation.
-
-### Milestone 2 — High-value senior engineering practices
-
-Add requirement clarification, ambiguity detection, scope breakdown, estimation, validation, risk analysis, trade-off analysis, design review, architecture decisions, and common failure modes.
-
-### Milestone 3 — Maturity, feedback, and governance
-
-Improve content consistency, terminology, review quality, maturity assessment, contribution gates, and repository governance.
-
-### Milestone 4 — Practical real-case playbooks
-
-Apply the guidance to reviewed cases involving requirements, estimation, scope reduction, architecture decisions, code review, incidents, delivery risks, and technical leadership.
-
-See [ROADMAP.md](ROADMAP.md) for the maintained roadmap.
-
-## Engineering principles
-
-1. Start with the problem, context, and constraints.
-2. Make decisions from evidence and explicit trade-offs.
-3. Prefer the simplest approach that satisfies current requirements.
-4. Add abstractions, rules, and processes only when they solve a concrete problem.
-5. Validate assumptions before implementation and outcomes after delivery.
-6. Treat documentation as part of the engineering system.
-7. Evolve guidance through production evidence and respectful review.
-
-## Contributing
-
-Contributions are welcome when they improve correctness, clarity, or practical usefulness. This repository is curated; it is not a personal blog, discussion forum, or technology debate space.
-
-Read the [contributing rules](CONTRIBUTING.md) before opening an issue or pull request. Submissions must provide practical context, clear reasoning, relevant trade-offs, and a professional collaboration standard.
+Read [Contributing](CONTRIBUTING.md) for a small path from observation to useful guidance. Repository quality controls are strict; engineering practices are not turned into mandatory policy without an enforceable reason.
 
 ## Project governance
 

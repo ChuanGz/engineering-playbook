@@ -2,7 +2,7 @@
 
 ## Decision supported
 
-Choose evidence that can reveal a consequential failure before users or operators must discover it.
+Choose evidence that can reveal a consequential failure before users or operators discover it.
 
 ## Principles
 

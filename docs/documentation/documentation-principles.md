@@ -8,7 +8,7 @@ Decide whether documentation is needed, what form it should take, and how it wil
 
 ### Start from reader action
 
-Name the reader, their context, and the task or decision the document must enable. If no behavior changes after reading, challenge whether the document should exist.
+Name the reader, their context, and the task or decision the document needs to enable. If no behavior changes after reading, challenge whether the document should exist.
 
 ### Keep truth near its owner
 

@@ -1,98 +1,94 @@
 # Roadmap
 
-The roadmap advances by evidence and quality, not file count or elapsed time. Each milestone represents roughly two months of focused work, but completion requires its exit criteria.
+The roadmap advances through evidence and reader outcomes, not file count or elapsed time. New domain breadth pauses until people can find, understand, and apply the existing guidance.
+
+## Maturity gates
+
+This model answers: **What evidence allows the playbook to advance without confusing more content with greater maturity?**
+
+```mermaid
+flowchart LR
+    M1["M1: Foundation"] --> G1{"Quality evidence"}
+    G1 --> M2["M2: Accessible application"]
+    M2 --> G2{"Reader evidence"}
+    G2 --> M3["M3: Evidence-led depth"]
+    M3 --> G3{"Outcome evidence"}
+    G3 --> M4["M4: Practical cases"]
+```
+
+Each gate requires observable evidence from the previous stage. Elapsed time, file count, and polished presentation do not open a gate.
 
 ## Milestone 1 — Foundation and core engineering standards
 
+### Status
+
+Complete. The repository contains substantive domain guidance, enforceable content standards, purpose-specific templates, contribution governance, and automated documentation hygiene.
+
+### Preserved exit evidence
+
+- Eight engineering domains have decision-oriented indexes and substantive guides.
+- The document contract, writing rules, content quality, terminology, decision records, and contribution review have enforceable acceptance criteria.
+- Templates have distinct decision purposes and observable evidence fields.
+- Root and domain navigation, Markdown lint, and internal links are validated.
+- Completion was based on decision value and review evidence rather than file presence.
+
+## Milestone 2 — Accessible application and learning culture
+
 ### Outcome
 
-Establish the minimum useful engineering handbook: substantive domain guidance, enforceable content standards, purpose-specific templates, contribution governance, and automated documentation hygiene.
+People with different roles can enter through a real situation, understand the consequence at the depth they need, and apply one authoritative practice in Scrum, Kanban, continuous flow, or a hybrid without creating duplicate guidance.
 
-### Scope
+### Current status: PARTIAL
 
-- Requirement analysis
-- System design
-- Software architecture
-- Implementation
-- Testing
-- Code review
-- Delivery
-- Documentation
-- Repository standards and document contract
-- Engineering decision and review templates
-- OSS governance and automated Markdown and link checks
+Repository implementation can establish the information architecture and review contracts. Completion also requires usability evidence from real technical, product, and leadership readers.
 
 ### Exit criteria
 
-M1 is complete only when all criteria are supported by repository evidence:
+- [x] Root navigation provides paths for newcomers, developers, product owners, engineering leaders, and CIO/CEO readers.
+- [x] Guidance uses progressive depth: understand, apply, and deep dive where multiple knowledge levels need it.
+- [x] A workflow-first map connects Scrum and Kanban touchpoints to one authoritative source.
+- [x] Three end-to-end journeys cover unclear ideas, risky changes, and learning from poor outcomes.
+- [x] Ten bounded visual models support a 30-minute senior learning path without adding image assets or technology-specific authority.
+- [x] Organizational scaling separates durable principles, cross-boundary guardrails, local adaptation, and evidence feedback.
+- [x] Six simplified examples and five working maxims support decisions without being presented as evidence.
+- [x] Contribution and learning guidance accept evidence-backed failed experiments without personal blame.
+- [x] Mandatory language is limited to enforceable or necessary conditions by repository standards.
+- [ ] A technical reader, product reader, and leadership reader can each find a relevant starting point within two navigation choices.
+- [ ] Those readers can explain the decision, consequence, owner, and next action at their required depth.
+- [ ] A senior reader can explain the visual decision loop, route three pilot situations, and distinguish shared guardrails from local practice within 30 minutes.
+- [ ] Reader feedback is recorded, material failures are corrected, and the review result is published without invented evidence.
 
-- [x] Each of the eight domains has an index and a minimum substantive guide set.
-- [x] Domain guides support real decisions and include applicability, trade-offs, failure modes, and review evidence where relevant.
-- [x] No domain is represented only by placeholders, generic advice, or empty taxonomy.
-- [x] The document contract defines reader, problem, outcome, evidence, type, scope, and ownership.
-- [x] Writing, content quality, terminology, decision-record, and contribution-review standards have enforceable acceptance criteria.
-- [x] Every template has a distinct decision purpose, domain-specific evidence, ownership, and pass conditions.
-- [x] Contribution, conduct, governance, security, changelog, license, and GitHub community files are present.
-- [x] Root and domain navigation resolve to existing content.
-- [x] Repository-wide Markdown lint and internal-link validation pass.
-- [x] GitHub Actions validates Markdown successfully on the default branch.
-- [x] A senior-quality audit finds no critical generic-content, duplication, or unsupported-standard gap.
-
-### Non-goals
-
-- Exhaustive coverage of every engineering specialty.
-- Technology- or framework-specific implementation tutorials.
-- Real-case examples without validated source context.
-- Maturity claims based only on structure, formatting, or automation.
-
-## Milestone 2 — High-value senior engineering practices
+## Milestone 3 — Evidence-led depth and controlled expansion
 
 ### Outcome
 
-Deepen the decisions senior engineers make before and around implementation using evidence from real delivery contexts.
+Deepen decision guidance only where reader feedback, delivery evidence, or repeated failure shows a real gap.
 
 ### Focus
 
-- requirement clarification and ambiguity management;
-- gap, impact, traceability, and change analysis;
-- estimation and scope-reduction decisions;
-- risk assessment and trade-off analysis;
-- architecture and design reviews;
-- engineering failure patterns and decision quality.
+- classify guides as keep, adapt, rewrite, or merge/remove;
+- improve content by end-to-end reader journey rather than folder-wide cosmetic rewrites;
+- deepen requirement, estimation, risk, architecture, and delivery decisions when evidence justifies it;
+- preserve stable URLs and point superseded guidance to its successor;
+- separate time-sensitive examples from durable principles;
+- audit terminology, mandatory language, duplication, ownership, and maintenance triggers.
 
 ### Entry condition
 
-M1 exit criteria remain satisfied and proposed content has real project evidence or an explicitly bounded framework.
+Milestone 2 repository checks pass and unresolved usability gaps are visible. New content has real project evidence or is labeled as a bounded framework.
 
-## Milestone 3 — Maturity, feedback, and governance
-
-### Outcome
-
-Make the playbook measurably consistent, maintainable, and responsive to contribution and usage evidence.
-
-### Focus
-
-- cross-domain consistency and terminology audits;
-- contribution feedback and quality-gate refinement;
-- maturity assessment with observable evidence;
-- governance and exception handling;
-- ownership, maintenance triggers, and stale-content removal;
-- stronger review and audit practices.
-
-## Milestone 4 — Practical real-case playbooks
+## Milestone 4 — Practical cases and measurable learning
 
 ### Outcome
 
-Demonstrate engineering judgment using sanitized, evidence-backed cases rather than fictional stories presented as experience.
-
-### Focus
-
-- requirement and estimation decisions;
-- scope reduction and delivery-risk decisions;
-- architecture and integration decisions;
-- code review and incident learning;
-- technical leadership and organizational change.
+Demonstrate engineering judgment using sanitized, evidence-backed cases and use their outcomes to improve the authoritative guidance.
 
 ### Evidence requirement
 
-Each case must state source context, constraints, decisions, consequences, anonymization boundaries, and lessons that transfer without inventing facts.
+Each case states its source context, constraints, decision, positive and negative consequences, anonymization boundary, and transferable lesson. Fictional examples are labeled and are never presented as project evidence.
+
+### Completion signals
+
+- Cases cover requirement, scope, architecture, delivery, incident, and leadership decisions only where source evidence exists.
+- Repeated outcomes update or retire a guide, template, or control.
+- Reader and contributor feedback shows which decisions became easier, not merely which pages received more activity.

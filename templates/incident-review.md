@@ -32,14 +32,17 @@ Do not assign root cause to an individual action. Explain why the system allowed
 - What delayed or complicated response:
 - Data or state requiring reconciliation:
 
-## Corrective decisions
+## Corrective decisions and experiments
 
-| Action | Failure condition reduced | Observable completion | Owner | Priority |
+| Action or experiment | Failure condition reduced | Benefit and harm signals | Owner | Review trigger |
 | --- | --- | --- | --- | --- |
-| [Action] | [Named condition] | [Pass evidence] | [Owner] | [Priority] |
+| [Smallest useful change] | [Named condition] | [Expected evidence and possible cost] | [Owner] | [Date or observable event] |
+
+Separate required corrective work from unvalidated improvement experiments. A lesson becomes recurring policy only after evidence supports it and an owner can maintain or remove it.
 
 ## Learning validation
 
 - Evidence that corrective actions work:
 - Recurrence or recovery exercise trigger:
 - Residual risk accepted by:
+- Experiment disposition: Keep | Adapt | Stop | Escalate

@@ -26,7 +26,7 @@ Use language that preserves responsibility and decision meaning across domains w
 
 1. Identify the decision or behavior affected by competing terms.
 2. Prefer the term used by the authoritative domain or contract owner.
-3. Record aliases only when readers must map existing language.
+3. Record aliases only when readers need to map existing language.
 4. Update related indexes and links in the same change.
 5. Avoid global renaming when local context legitimately differs.
 

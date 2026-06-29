@@ -1,5 +1,9 @@
 # Validation Before Implementation
 
+## At a glance
+
+Product, engineering, and business decision owners use this guide before committing heavily to an uncertain outcome or solution. Validate the assumption that combines high consequence with weak evidence, using the cheapest credible method that can change the decision.
+
 ## Purpose
 
 Reduce avoidable implementation by testing the most consequential assumptions with the cheapest credible evidence.
@@ -20,7 +24,7 @@ Proceed when evidence is strong enough for the reversibility and cost of the dec
 
 ## Trade-offs
 
-Validation costs time and can delay delivery; skipping it transfers that cost to rework and production risk. Time-box discovery and define the decision it must enable.
+Validation costs time and can delay delivery; skipping it transfers that cost to rework and production risk. Time-box discovery and define the decision it needs to enable.
 
 ## Failure modes
 
@@ -35,3 +39,7 @@ Validation costs time and can delay delivery; skipping it transfers that cost to
 - [ ] Each validation activity has a decision and success threshold.
 - [ ] Evidence and remaining uncertainty are recorded.
 - [ ] Scope and acceptance conditions reflect the findings.
+
+## Maintenance trigger
+
+Review this guide when validation work repeatedly produces no decision, arrives after commitment, or fails to change scope when evidence disproves an assumption.

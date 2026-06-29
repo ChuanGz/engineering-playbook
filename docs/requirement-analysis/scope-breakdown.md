@@ -1,5 +1,9 @@
 # Scope Breakdown
 
+## At a glance
+
+Product owners and delivery teams use this guide to turn a broad outcome into smaller results that can be accepted, learned from, or released. Leaders can use the resulting slices to see what value is included now, what is deferred, and which dependency truly blocks progress.
+
 ## Purpose
 
 Turn a broad outcome into coherent delivery slices that can be estimated, validated, and released independently where practical.
@@ -19,6 +23,10 @@ Prefer a slice when it has one testable outcome, a clear owner, bounded dependen
 
 Do not split solely by technical layer. A database-only or API-only task may track implementation work, but it does not replace an outcome-oriented scope slice.
 
+## Simplified example
+
+“Database, service, and screen” are implementation tasks, not three useful delivery slices. A first vertical slice could let an authorized user view one known shipment status end to end. Later slices can add search, history, and exception handling with their own observable outcomes.
+
 ## Trade-offs
 
 Smaller slices improve feedback and predictability but create coordination and release overhead. Keep slices large enough to produce meaningful evidence.
@@ -36,3 +44,7 @@ Smaller slices improve feedback and predictability but create coordination and r
 - [ ] Included and excluded behavior are explicit.
 - [ ] Dependencies have technical or business justification.
 - [ ] Cross-cutting security, data, and operational work is visible.
+
+## Maintenance trigger
+
+Review this guide when slices repeatedly complete technical activity without producing an observable outcome, or when hidden dependencies return during delivery.

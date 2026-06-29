@@ -1,6 +1,6 @@
 # Templates
 
-Use these purpose-specific formats to make consequential engineering work reviewable. Remove inapplicable sections instead of adding placeholders; never invent evidence to complete a template.
+Use these purpose-specific formats to make consequential engineering work reviewable. Remove inapplicable sections instead of adding placeholders; never invent evidence to complete a template. Improvement experiments remain experiments until their benefit, cost, and maintenance ownership have been reviewed.
 
 | Template | Decision supported |
 | --- | --- |

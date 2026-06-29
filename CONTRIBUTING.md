@@ -1,122 +1,90 @@
-# Contributing Rules
+# Contributing
 
-## Purpose
+## Help someone make a better decision
 
-This repository is a professional engineering playbook.
+A useful contribution starts with an observed problem, decision, or outcome—not a desire to add another rule. Small corrections, clearer explanations, failed experiments, and lessons from delivery can all improve this playbook.
 
-It is not:
+You do not need a senior title or a perfect success story. You do need to make the context, evidence, uncertainty, and practical value visible.
 
-- a personal blog
-- a discussion forum
-- a technology debate space
-- a place for personal criticism
-- a collection of random tips
-- a dump of textbook summaries
+## Good ways to help
 
-Contributions must improve the quality, clarity, correctness, or practical usefulness of the playbook.
+| Contribution | Useful when it... | Evidence to include |
+| --- | --- | --- |
+| Correction | Prevents a concrete misunderstanding or unsafe decision | The incorrect claim and a stronger source or reasoning |
+| Clarification | Helps a named reader find, explain, or apply existing guidance | The confusing passage and the reader task it blocks |
+| Delivery lesson | Exposes a reusable decision, trade-off, or failure condition | Observed context, consequence, and bounded lesson |
+| Failed experiment | Prevents an untested idea from becoming repeated advice | Expected signal, observed result, cost, and what to try next |
+| New guide or template | Serves a reader need that no current source can support | Reader, problem, outcome, evidence, scope, and ownership |
 
----
+Prefer improving an authoritative guide over creating a parallel source. New structure is justified only when it serves a distinct reader task or maintenance owner.
 
-## Accepted Contributions
+## Start from the smallest useful change
 
-Contributions should be based on:
+1. Name the reader and the decision, task, or failure they face.
+2. Link the strongest available evidence or label the content as a bounded framework.
+3. Explain why the change matters and what pain or risk it reduces.
+4. Propose the smallest useful guidance or experiment.
+5. State how a reader or team could observe benefit, harm, or irrelevance.
+6. Identify when the guidance should not be applied and what will trigger review.
 
-- real engineering experience
-- practical project situations
-- clear reasoning
-- validated trade-offs
-- maintainability impact
-- implementation, review, delivery, or production experience
+For a substantial addition, open a content proposal before investing in a large document set. A small correction may go directly to a pull request.
 
-Every contribution should answer at least one question:
+## Share a failed experiment safely
 
-- What problem does this guidance solve?
-- When should it be applied?
-- When should it not be applied?
-- What trade-offs does it introduce?
-- What failure does it help prevent?
+A failed experiment is welcome when it helps others avoid a repeated assumption or make a stronger decision. Include:
 
----
+- the intended outcome and why the experiment appeared credible;
+- the observed result and available evidence;
+- the system conditions that shaped the result;
+- positive and negative consequences;
+- what should be kept, adapted, stopped, or tried next;
+- assumptions and evidence gaps that remain.
 
-## Content Standards
+Protect people and organizations:
 
-Contributions must be:
+- remove confidential, personal, security-sensitive, customer, and commercially sensitive information;
+- describe observable behavior and system conditions rather than attacking a person or speculating about motives;
+- never invent measurements, incidents, project history, or consensus;
+- use the responsible private process for security, legal, misconduct, or personnel matters.
 
-- practical
-- concise
-- specific
-- evidence-based
-- reviewable
-- maintainable
-- aligned with existing structure
-- written in a professional tone
+Blameless learning preserves accountability. Decision owners still explain choices, disclose material risks, and complete or escalate accepted actions.
 
-Avoid:
+## Write for use, not authority
 
-- generic advice
-- vague best practices
-- duplicated content
-- unnecessary abstractions
-- over-engineered processes
-- personal preference presented as standard
-- patterns without clear problem context
+Follow the [document contract](standards/document-contract.md), [writing standard](standards/writing-standard.md), and [content quality standard](standards/content-quality-standard.md).
 
----
+In particular:
 
-## Collaboration Rules
+- lead with the reader's outcome, consequence, and next action;
+- distinguish a principle, recommendation, rule, example, and experiment;
+- use `must` only for a necessary or enforceable condition;
+- show meaningful alternatives and negative consequences;
+- define specialist terms where readers first need them;
+- keep framework mappings connected to one authoritative source.
 
-Do not use issues, pull requests, reviews, or comments to:
+## How review works
 
-- attack individuals
-- criticize personal style
-- compare people, teams, or companies negatively
-- argue for the sake of arguing
-- start unrelated technology debates
-- promote tools, frameworks, or patterns without context
-- turn technical disagreement into personal conflict
+Reviewers first examine scope, evidence, decision value, and maintenance. Editorial polish follows only after the contribution is substantively useful.
 
-Technical feedback is welcome only when it is:
+Findings are classified as:
 
-- specific
-- respectful
-- evidence-based
-- relevant to the content
-- focused on correctness, clarity, maintainability, or trade-offs
+- **Blocking:** incorrect guidance, hidden material risk, unsupported mandatory language, missing required evidence, or duplicated authority.
+- **Follow-up:** a bounded improvement that does not invalidate the contribution.
+- **Suggestion:** an optional usability improvement.
+- **Preference:** a personal choice with no demonstrated impact; never a merge blocker.
 
----
+Disagreement should identify the affected reader or risk, explain the trade-off, and propose a verifiable alternative. The goal is to improve the decision, not win an argument.
 
-## Disagreement Rules
+## What does not belong here
 
-When disagreeing, explain:
+The repository will not accept:
 
-- what should change
-- why it matters
-- what trade-off exists
-- what alternative is better
-- what risk is reduced
+- generic advice that could be copied unchanged into any project;
+- personal preference presented as a professional standard;
+- framework or tool promotion without a decision context;
+- duplicated guidance instead of a link to its authoritative source;
+- fictional project experience presented as evidence;
+- attacks, motive speculation, or disclosure of protected information;
+- rules, checklists, or process that cannot name the failure they prevent.
 
-The goal is to improve the playbook, not to win arguments.
-
----
-
-## Rejection Criteria
-
-A contribution may be rejected if it:
-
-- adds noise
-- duplicates existing guidance
-- lacks practical context
-- increases complexity without clear value
-- promotes pattern-driven thinking
-- creates unnecessary rules
-- is too opinionated without reasoning
-- is written like a tutorial instead of a playbook
-- starts debate instead of improving content
-
----
-
-## Core Principle
-
-Use engineering judgment.
-
-Do not add a rule, pattern, checklist, abstraction, or process unless it solves a concrete problem and improves engineering decision-making.
+When evidence is incomplete but the question is valuable, contribute a clearly bounded framework or request the missing domain review. Visible uncertainty is more useful than invented certainty.

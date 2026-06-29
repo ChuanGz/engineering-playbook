@@ -8,7 +8,7 @@ Place responsibility, data authority, and change ownership so that one business 
 
 Use observed signals:
 
-- business invariants that must change together;
+- business invariants that need to change together;
 - language and rules owned by the same domain experts;
 - data requiring one authoritative writer;
 - changes that repeatedly touch the same components;

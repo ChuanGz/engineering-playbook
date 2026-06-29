@@ -31,7 +31,7 @@ Principles increase consistency and review speed, but too many constrain local j
 ## Failure modes
 
 - Renaming a preferred technology as a principle.
-- Applying “loose coupling” without defining which change must be isolated.
+- Applying “loose coupling” without defining which change needs to be isolated.
 - Keeping principles that conflict without priority or exception rules.
 - Assessing compliance by diagram shape instead of change and runtime behavior.
 

@@ -2,11 +2,11 @@
 
 ## Decision supported
 
-Decide which automated or manual evidence must block integration, promotion, or release because proceeding would exceed accepted risk.
+Decide which automated or manual evidence blocks integration, promotion, or release because proceeding would exceed accepted risk.
 
 ## Gate contract
 
-Every required gate must state:
+For every required gate, state:
 
 - the failure or policy it protects against;
 - the evidence and objective pass condition;

@@ -2,7 +2,7 @@
 
 ## Decision supported
 
-Shape a change so reviewers can reason about its behavior and risk without separating work that must be understood together.
+Shape a change so reviewers can reason about its behavior and risk without separating work that needs to be understood together.
 
 ## Scope signals
 

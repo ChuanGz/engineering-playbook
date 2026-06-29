@@ -13,7 +13,7 @@ Determine whether the change includes credible evidence for the failures it can 
 5. Confirm test data exposes boundary and invalid cases.
 6. Identify risks that require integration, deployment, or production validation instead of unit tests.
 
-No test change can be valid when behavior is demonstrably unchanged and existing evidence already protects the affected boundary. Require new tests because risk changed, not because every diff must increase test count.
+No test change can be valid when behavior is demonstrably unchanged and existing evidence already protects the affected boundary. Require new tests because risk changed, not because every diff needs to increase test count.
 
 ## Trade-offs
 
