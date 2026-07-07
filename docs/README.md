@@ -8,6 +8,7 @@ These domains are the authoritative sources. Scrum, Kanban, and role-based paths
 
 | Domain | Decision focus |
 | --- | --- |
+| [Capability foundations](foundations/capability.md) | Understand how knowledge, skills, experience, mindset, and practice combine into capability and measurable impact. |
 | [Requirement analysis](requirement-analysis/README.md) | Clarify outcomes, scope, evidence, estimates, and readiness before implementation. |
 | [System design](system-design/README.md) | Translate constraints and quality scenarios into testable system decisions. |
 | [Software architecture](architecture/README.md) | Control structural ownership, dependency direction, integration, and evolution. |
