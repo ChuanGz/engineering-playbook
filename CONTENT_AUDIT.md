@@ -2,7 +2,7 @@
 
 ## Audit result: PARTIAL
 
-This audit covers all 61 Markdown files under `docs/` after the workflow-first navigation, visual senior-learning path, enterprise scaling guide, and three pilot journeys were implemented. The repository structure and pilot content are ready for reader validation. The result remains `PARTIAL` because no real technical, product, or leadership usability review is recorded.
+This audit covers all 61 Markdown files under `docs/` after the workflow-first navigation, visual senior-learning path, enterprise scaling guide, three pilot journeys, and practical writing contract were implemented. The repository structure, SDLC activity map, and adapted guide entry points are ready for reader validation. The result remains `PARTIAL` because no real technical, product, or leadership usability review is recorded.
 
 Passing lint, links, or a structural checklist is not evidence that a reader can understand or apply the content.
 
@@ -31,6 +31,17 @@ Passing lint, links, or a structural checklist is not evidence that a reader can
 
 The audit found no guide that currently requires a full rewrite or removal. Existing guides have domain-specific decision value; most need adaptation to the newer accessibility and durability contract. A future evidence-based review may change these classifications.
 
+## Practical writing adaptation evidence
+
+The practical writing pass added role-flexible, developer-friendly entry points without changing repository ownership or claiming reader validation. The pass focused on:
+
+- practical work-moment navigation and SDLC activity mapping;
+- writing and content-quality standards that require situation, decision, consequence, action, example, and evidence to be discoverable without forcing identical headings;
+- core daily-work guidance across ambiguity, scope, coding, testing, review, and release readiness;
+- requirement, implementation, testing, review, delivery, architecture, and system-design guides that needed clearer when-to-use, decision, example, or evidence-to-keep sections.
+
+The pass remains an implementation adaptation, not usability proof. Guides are better prepared for review, but `PASS` still requires observed reader evidence.
+
 ## Why the pilot guides are kept
 
 The nine authoritative guides used by the first two journeys now lead with the affected readers, consequence, and smallest decision outcome, then preserve their deeper reasoning and review evidence. They also state a maintenance trigger:
@@ -48,9 +59,9 @@ The visual path covers the decision-to-learning loop, three senior journeys, fra
 
 ## Adaptation order
 
-1. Run usability reviews before changing all 47 files. Record where readers fail to find the path, explain the consequence, identify the owner, or choose a next action.
-2. Adapt domain indexes based on those failures so readers enter the right guide before more detail is added.
-3. Adapt guides by end-to-end journey or recurring decision, not by applying one repeated skeleton to a folder.
+1. Use the practical writing contract as the review baseline for future guide changes.
+2. Run usability reviews before claiming `PASS`. Record where readers fail to find the path, explain the consequence, identify the owner, or choose a next action.
+3. Adapt remaining guide structure only when reader evidence, delivery evidence, or recurring confusion shows a specific gap.
 4. Preserve stable paths. If evidence later requires a merge or replacement, leave a clear successor link at the old authority.
 5. Separate time-sensitive examples from durable reasoning and label fictional scenarios.
 6. Stop adapting when another change would add prose without improving a demonstrated reader task.
