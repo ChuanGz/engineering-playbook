@@ -42,6 +42,8 @@ People with different roles can enter through a real situation, understand the c
 
 Repository implementation can establish the information architecture and review contracts. Completion also requires usability evidence from real technical, product, and leadership readers.
 
+The practical writing pass added work-moment navigation, an SDLC activity map, and domain-specific guide entry points so readers can find the situation, decision, consequence, action, example, and evidence more easily. This improves readiness for validation but does not replace observed reader evidence.
+
 ### Exit criteria
 
 - [x] Root navigation provides paths for newcomers, developers, product owners, engineering leaders, and CIO/CEO readers.
