@@ -4,6 +4,10 @@
 
 Determine whether the implementation produces required outcomes across valid input, invalid input, state transitions, failures, and relevant concurrency.
 
+## When to use this
+
+Use this for changes that alter business behavior, state transitions, authorization, data writes, retries, concurrency, or error outcomes.
+
 ## Review method
 
 1. Trace the requirement and acceptance condition into executable behavior.
@@ -27,7 +31,11 @@ Exhaustive reasoning is impossible for complex systems. Focus on high-impact sta
 - Returning success before required state is durable.
 - Ignoring overflow, clock, locale, ordering, or null behavior that affects the domain.
 
-## Review evidence
+## Example
+
+Weak review checks that a submit button calls the expected endpoint. Stronger correctness review follows duplicate submit, expired permission, partial dependency failure, and whether success is returned only after the authoritative state is durable.
+
+## Evidence to keep
 
 - [ ] Acceptance conditions map to observable behavior.
 - [ ] Invariants and invalid transitions are enforced at an authoritative boundary.

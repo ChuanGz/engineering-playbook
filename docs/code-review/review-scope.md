@@ -4,6 +4,10 @@
 
 Shape a change so reviewers can reason about its behavior and risk without separating work that needs to be understood together.
 
+## When to use this
+
+Use this before opening or reviewing a large, mixed, or multi-step change. It helps decide whether to split, combine, or sequence the work.
+
 ## Scope signals
 
 A review is probably too broad when it combines unrelated outcomes, mixes structural migration with new behavior, touches several ownership boundaries without one reason, or produces more findings than reviewers can prioritize.
@@ -31,7 +35,11 @@ Smaller reviews improve focus and feedback time but create sequencing overhead a
 - Using a large generated diff to obscure meaningful changes.
 - Treating follow-up issues as acceptable for release-critical omissions.
 
-## Review evidence
+## Example
+
+Weak split: migration in one PR, behavior in another, tests in a third, with no deployable intermediate state. Better split: first add compatible schema and tests, then change behavior behind a safe path, then remove old compatibility after rollout evidence.
+
+## Evidence to keep
 
 - [ ] The diff has one primary outcome and clear non-goals.
 - [ ] Every included change is necessary for that outcome or safe migration.

@@ -4,6 +4,10 @@
 
 Automate a check when repeated, trustworthy evidence is worth its execution, maintenance, and diagnostic cost.
 
+## When to use this
+
+Use this before adding a test to a required pipeline, promoting a manual check to automation, or deciding whether an existing automated check still earns its cost.
+
 ## Automation criteria
 
 Automate when the check:
@@ -35,7 +39,11 @@ Automation increases repeatability and feedback frequency but codifies assumptio
 - Keeping tests after their protected behavior or consumer is removed.
 - Treating environment instability as an unavoidable test characteristic.
 
-## Review evidence
+## Example
+
+Weak automation records a long UI journey that fails for many unrelated reasons. Better automation protects a recurring payment regression with controlled data, one clear pass condition, and an owner who can fix the failure.
+
+## Evidence to keep
 
 - [ ] Each automated check influences a named engineering decision.
 - [ ] Pass criteria and failure ownership are objective.

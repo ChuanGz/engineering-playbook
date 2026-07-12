@@ -4,6 +4,10 @@
 
 Verify behavior that depends on real collaboration across storage, framework, process, protocol, or managed-service boundaries.
 
+## When to use this
+
+Use this when confidence depends on real configuration, persistence, serialization, routing, authentication, messaging, transactions, or dependency failure behavior.
+
 ## Select the boundary
 
 Use an integration test when confidence depends on:
@@ -36,7 +40,11 @@ Real dependencies reveal configuration and protocol defects but increase executi
 - Asserting only an HTTP status while state is incorrect.
 - Retrying flaky tests without identifying environmental or product cause.
 
-## Review evidence
+## Example
+
+Weak integration test asserts `200 OK` after saving an order. Better integration test verifies persisted state, transaction behavior, authorization boundary, emitted message, and diagnostics for the expected dependency failure.
+
+## Evidence to keep
 
 - [ ] Every real dependency is present because it exposes a named risk.
 - [ ] Versions and configuration match relevant production behavior.
