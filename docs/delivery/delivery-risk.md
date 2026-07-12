@@ -1,6 +1,6 @@
 # Delivery Risk
 
-## At a glance
+## When to use this
 
 Engineering and business owners use this guide before releasing a change that could harm users, data, operations, commitments, or recovery capability. The decision is not whether risk exists; it is which exposure is reduced, which remains, and who can pause or accept the release.
 
@@ -63,7 +63,7 @@ Risk controls reduce exposure but add lead time and operational complexity. Appl
 - Applying the same release process to reversible and irreversible changes.
 - Measuring successful deployment while user outcomes degrade.
 
-## Review evidence
+## Evidence to keep
 
 - [ ] Each material risk names a harmful outcome and affected boundary.
 - [ ] Controls reduce likelihood, impact, detection time, or recovery time.

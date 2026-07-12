@@ -1,6 +1,6 @@
 # Rollback and Recovery
 
-## At a glance
+## When to use this
 
 Release owners, operators, engineers, and accountable leaders use this guide to reduce harm when a release fails. A previous artifact is not a complete rollback if data, configuration, contracts, or external effects cannot move backward safely; containment, roll-forward, or reconciliation may be required.
 
@@ -59,7 +59,7 @@ Backward-compatible migration preserves rollback but requires temporary dual sup
 - Repeated automated rollback causing oscillation.
 - Restoring availability without checking data correctness.
 
-## Review evidence
+## Evidence to keep
 
 - [ ] Recovery choice accounts for code, configuration, contract, and data state.
 - [ ] Trigger, authority, procedure, and verification are explicit.
