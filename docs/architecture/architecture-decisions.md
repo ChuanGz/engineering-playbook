@@ -4,6 +4,14 @@
 
 Preserve why a consequential structural choice was made so future engineers can operate, challenge, or replace it using the original forces and new evidence.
 
+## When to use this
+
+Use this when a choice changes boundaries, data authority, integration semantics, quality attributes, operational responsibility, or future change cost.
+
+## Decision to make
+
+Decide whether the choice is consequential enough to record, and what evidence would let a future team keep, supersede, or reverse it.
+
 ## When to record
 
 Create an architecture decision record when a choice:
@@ -39,7 +47,11 @@ Decision records reduce repeated debate and context loss but become noise when e
 - Treating approval as permanent proof that assumptions remain true.
 - Updating an old ADR until the original decision can no longer be understood.
 
-## Review evidence
+## Example
+
+Weak ADR: "Use Kafka." Better ADR: "Use asynchronous order events because checkout must continue when fulfillment is delayed; accept delayed failure and reconciliation cost; reconsider if fulfillment needs immediate authoritative response."
+
+## Evidence to keep
 
 - [ ] Alternatives were credible under the same constraints.
 - [ ] Negative consequences and ownership are explicit.

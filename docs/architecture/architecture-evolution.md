@@ -4,6 +4,14 @@
 
 Change system structure when observed delivery or runtime pressure exceeds the cost and risk of migration—not because a future pattern appears more mature.
 
+## When to use this
+
+Use this when current structure repeatedly slows delivery, weakens reliability, blocks ownership, increases operational load, or cannot enforce a necessary boundary.
+
+## Decision to make
+
+Decide whether to improve the current structure, evolve one boundary incrementally, or start a larger migration with explicit stop conditions.
+
 ## Evolution signals
 
 Use evidence such as:
@@ -39,7 +47,11 @@ Evolution preserves learning and limits migration risk but temporarily supports 
 - Counting migrated components instead of improved outcomes.
 - Removing rollback before behavior and operations are proven.
 
-## Review evidence
+## Example
+
+Weak evolution plan: "Move to microservices this quarter." Better plan: "Extract payment settlement only after repeated release conflicts and data ownership defects are measured; move one flow, prove operational ownership, and stop if coordination cost does not improve."
+
+## Evidence to keep
 
 - [ ] The current constraint is observable and consequential.
 - [ ] The proposed change is smaller than credible alternatives.

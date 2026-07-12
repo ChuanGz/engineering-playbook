@@ -4,6 +4,14 @@
 
 Place a service or module contract where ownership, business responsibility, and change can be controlled without creating unnecessary distribution.
 
+## When to use this
+
+Use this when a design introduces a new module, service, API, event boundary, or independently owned contract.
+
+## Decision to make
+
+Decide where the boundary should sit, what authority it owns, and whether the benefit justifies distribution, mapping, compatibility, and operational cost.
+
 ## Boundary drivers
 
 Evaluate:
@@ -38,7 +46,11 @@ Stronger boundaries reduce accidental coupling but duplicate some models and map
 - Returning internal exceptions or persistence models.
 - Claiming independence while sharing schema ownership or coordinated releases.
 
-## Review evidence
+## Example
+
+Weak boundary: split `CustomerService` and `CustomerDatabaseService` because the tables differ. Better boundary: keep customer identity authority in one owner and expose only the outcomes consumers need, unless ownership, trust, scaling, or deployment evidence justifies separation.
+
+## Evidence to keep
 
 - [ ] The boundary has one accountable business and operational owner.
 - [ ] State authority and consistency expectations are explicit.
