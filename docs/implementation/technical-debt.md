@@ -4,6 +4,14 @@
 
 Choose when to accept, reduce, or retire an engineering liability based on its effect on delivery, reliability, security, and operating cost.
 
+## When to use this
+
+Use this when a known engineering liability affects delivery speed, defect risk, operational recovery, security exposure, or cost. Do not use it to prioritize disliked code without consequence evidence.
+
+## Decision to make
+
+Decide whether to remediate now, contain the risk, attach remediation to nearby work, accept the debt temporarily, or close it because the consequence no longer exists.
+
 ## Debt record
 
 Record a debt item only when it contains:
@@ -36,7 +44,11 @@ Dedicated remediation can restore structural capacity but delays visible outcome
 - Rewriting a subsystem when containment would reduce the actual risk.
 - Paying low-impact cleanup while high-impact operational debt remains.
 
-## Review evidence
+## Example
+
+Weak debt item: "Refactor old reporting code." Better debt item: "Monthly report changes require coordinated edits in four modules and caused two reconciliation defects; contain by adding contract tests now, then remove duplicated mapping when the next report change touches the area."
+
+## Evidence to keep
 
 - [ ] The item names a real consequence, not aesthetic discomfort.
 - [ ] Remediation, containment, and acceptance were compared.

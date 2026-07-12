@@ -4,6 +4,14 @@
 
 Place code so a change to one responsibility can be understood, implemented, tested, and owned without searching unrelated technical layers.
 
+## When to use this
+
+Use this when adding a new capability, moving code, creating shared modules, splitting packages, or reviewing a change that spreads one outcome across many locations.
+
+## Decision to make
+
+Decide where responsibility, state, validation, tests, and ownership belong so future changes stay local and dependency direction remains enforceable.
+
 ## Organization drivers
 
 Organize around:
@@ -37,7 +45,11 @@ Capability-oriented organization improves change locality but may duplicate tech
 - Allowing internal models to become cross-module contracts.
 - Increasing project count without enforcing dependencies.
 
-## Review evidence
+## Example
+
+Weak organization puts shipment status rules in UI helpers, API services, and database utilities. Better organization keeps the status decision with the owning capability, exposes a small contract, and lets UI/API code call that contract without duplicating state rules.
+
+## Evidence to keep
 
 - [ ] A typical change has a clear starting point and bounded impact.
 - [ ] Shared code has shared semantics, ownership, and lifecycle.

@@ -4,6 +4,14 @@
 
 Preserve enough failure meaning for the caller to respond correctly and for operators to diagnose and recover without exposing sensitive internals.
 
+## When to use this
+
+Use this when a change introduces validation, authorization, external dependencies, retries, cancellation, partial state changes, or user-visible error behavior.
+
+## Decision to make
+
+Decide which failures callers can act on, which failures operators must investigate, and where recovery, translation, logging, or compensation should happen.
+
 ## Failure classification
 
 Distinguish at least:
@@ -38,7 +46,11 @@ Detailed error contracts improve caller decisions but increase compatibility sur
 - Converting cancellation into an unexpected server error.
 - Returning raw dependency messages to consumers.
 
-## Review evidence
+## Example
+
+Weak handling returns "server error" for invalid input, authorization failure, dependency timeout, and duplicate submission. Better handling gives callers stable categories, retries only idempotent transient work, logs once at the accountable boundary, and defines how partial state is reconciled.
+
+## Evidence to keep
 
 - [ ] Each error category drives a distinct response.
 - [ ] Retry has bounded time, transient criteria, and idempotency evidence.
