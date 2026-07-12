@@ -40,6 +40,20 @@ Visuals, examples, and maxims inherit the same decision-value requirement. They 
 
 Include applicability, non-applicability, alternatives, negative consequences, failure modes, and validation when they can change the decision. Do not force identical headings when a document type does not need them.
 
+## Domain-specific judgment
+
+Do not rewrite guides by applying one repeated skeleton across every domain. Different SDLC activities need different expert judgment:
+
+- Requirement and scope guidance should expose outcome, ambiguity, assumptions, exclusions, and validation evidence.
+- System design and architecture guidance should expose constraints, trade-offs, ownership boundaries, quality attributes, and reconsideration triggers.
+- Implementation guidance should expose behavior, failure handling, code ownership, maintainability cost, and reviewable evidence.
+- Testing guidance should map consequential failure risks to credible checks and known gaps.
+- Code review guidance should support a merge decision with findings, evidence, and risk disposition.
+- Delivery and recovery guidance should expose rollout, detection, stop authority, rollback, repair, and residual risk acceptance.
+- Documentation guidance should preserve decisions, contracts, tasks, and recovery knowledge close to the owner.
+
+Use common structure only to improve navigation. The substance, examples, review questions, and evidence must be specific to the decision domain.
+
 ## Reject or revise
 
 - Advice that can be copied unchanged into nearly any repository.
@@ -55,6 +69,7 @@ Include applicability, non-applicability, alternatives, negative consequences, f
 - [ ] The problem and affected reader are concrete.
 - [ ] Material claims trace to evidence or labeled assumptions.
 - [ ] Guidance changes a task, decision, or risk response.
+- [ ] Examples, review questions, and evidence are specific to the domain instead of copied from a generic template.
 - [ ] Trade-offs include meaningful negative consequences.
 - [ ] Remaining domain or senior-review gaps are visible.
 
