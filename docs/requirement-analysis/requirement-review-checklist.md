@@ -4,6 +4,14 @@
 
 Decide whether a requirement is clear enough to estimate, design, and validate without hiding material assumptions.
 
+## When to use this
+
+Use this before a requirement enters delivery, when scope changes during delivery, or when reviewers cannot tell whether acceptance means user success or implementation completion.
+
+## Decision to make
+
+Decide whether the requirement is **ready**, **conditionally ready**, or **not ready** for estimation, design, and delivery.
+
 ## Review sequence
 
 1. State the user or business outcome in observable terms.
@@ -31,10 +39,18 @@ More review reduces expensive rework but delays learning if every minor uncertai
 - Accepting criteria that describe implementation rather than observable behavior.
 - Leaving exclusions and operational constraints implicit.
 
-## Exit checklist
+## Example
+
+Weak requirement: "Add export." Better requirement: "Finance users can export approved invoices for a selected month as CSV, including failed-export behavior, access rules, and validation against two known reports." The better version still may be conditional if data ownership or compliance review is unresolved.
+
+## Evidence to keep
 
 - [ ] Outcome and success evidence are explicit.
 - [ ] Scope boundaries and assumptions are recorded.
 - [ ] Material dependencies and risks have owners.
 - [ ] Acceptance conditions are testable.
 - [ ] Readiness status and remaining actions are documented.
+
+## Maintenance trigger
+
+Review this checklist when work marked ready repeatedly changes because outcome, owner, boundary, or validation evidence was unclear.
