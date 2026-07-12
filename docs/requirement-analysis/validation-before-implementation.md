@@ -1,12 +1,14 @@
 # Validation Before Implementation
 
-## At a glance
+## When to use this
 
 Product, engineering, and business decision owners use this guide before committing heavily to an uncertain outcome or solution. Validate the assumption that combines high consequence with weak evidence, using the cheapest credible method that can change the decision.
 
-## Purpose
+Use this before implementation when the team has weak evidence for user value, workflow fit, data availability, integration behavior, operational feasibility, or acceptance conditions.
 
-Reduce avoidable implementation by testing the most consequential assumptions with the cheapest credible evidence.
+## Decision to make
+
+Decide which assumption must be tested before commitment, which evidence is credible enough, and how the result will change scope, acceptance, design, or priority.
 
 ## What to validate
 
@@ -16,11 +18,18 @@ Reduce avoidable implementation by testing the most consequential assumptions wi
 - Required data, permissions, integrations, and operational capabilities exist.
 - Acceptance conditions distinguish success from completion.
 
-## Decision guide
+## How to apply
 
 Rank assumptions by impact and uncertainty. Validate high-impact, low-confidence assumptions first using interviews, existing data, workflow observation, prototypes, technical spikes, or contract tests as appropriate.
 
 Proceed when evidence is strong enough for the reversibility and cost of the decision. Do not demand production-level proof for a reversible experiment, and do not accept informal confidence for an irreversible migration.
+
+Choose the validation method by the question:
+
+- Use user interviews or workflow observation for problem importance and workflow fit.
+- Use existing data or operational reports for frequency, volume, or business impact.
+- Use prototypes for interaction uncertainty, not production readiness.
+- Use technical spikes or contract tests for integration, data, performance, or feasibility uncertainty.
 
 ## Trade-offs
 
@@ -33,7 +42,11 @@ Validation costs time and can delay delivery; skipping it transfers that cost to
 - Running a technical spike without explicit learning criteria.
 - Collecting evidence but not changing the requirement when it is disproved.
 
-## Exit checklist
+## Example
+
+Before building an approval dashboard, the riskiest assumption may not be UI layout. It may be whether approvers can trust the underlying status data. A short data audit or workflow observation can change the decision faster than a polished prototype.
+
+## Evidence to keep
 
 - [ ] Critical assumptions are ranked by impact and uncertainty.
 - [ ] Each validation activity has a decision and success threshold.
