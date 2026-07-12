@@ -4,6 +4,14 @@
 
 Make the origin, transformation, storage, movement, and failure behavior of important data explicit enough to review correctness and recovery.
 
+## When to use this
+
+Use this for business-critical data, sensitive data, cross-boundary movement, asynchronous processing, reconciliation, migration, or any flow where partial failure can mislead users or operators.
+
+## Decision to make
+
+Decide which system owns each state, how data changes, how failures are detected, and how inconsistent or duplicated work is reconciled.
+
 ## Model the flow
 
 For each business-critical flow, record:
@@ -35,7 +43,11 @@ Synchronous flows simplify outcome visibility but couple latency and availabilit
 - Retrying non-idempotent operations without a stable operation identity.
 - Omitting dead-letter, reconciliation, or manual recovery paths.
 
-## Review evidence
+## Example
+
+Weak data flow shows arrows between services. Better data flow names the system of record, validation point, write authority, message identity, retry behavior, dead-letter handling, reconciliation owner, and sensitive-data retention.
+
+## Evidence to keep
 
 - [ ] Every critical state has an authoritative owner.
 - [ ] Partial failure and recovery are visible in the flow.

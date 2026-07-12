@@ -4,6 +4,14 @@
 
 Place responsibility, data authority, and change ownership so that one business change does not create uncontrolled coordination across the system.
 
+## When to use this
+
+Use this when drawing, moving, splitting, merging, or reviewing a domain, module, service, package, or team-facing ownership boundary.
+
+## Decision to make
+
+Decide which responsibility owns the rule and state, what consumers may know, and whether deployment separation is justified.
+
 ## Boundary evidence
 
 Use observed signals:
@@ -38,7 +46,11 @@ Strong boundaries reduce propagation of change but duplicate models and require 
 - Distributing modules before logical dependencies are controlled.
 - Treating every team boundary as permanent architecture.
 
-## Review evidence
+## Example
+
+Weak boundary splits "orders", "order status", and "order history" while each change requires coordinated writes. Better boundary keeps the invariant and authoritative state together, then exposes history as a consumer contract when its lifecycle differs.
+
+## Evidence to keep
 
 - [ ] Responsibility and authoritative state have one owner.
 - [ ] Invariants do not require routine cross-boundary transactions.

@@ -4,6 +4,14 @@
 
 Select interaction semantics that satisfy consistency, latency, availability, ownership, and recovery requirements with acceptable operational cost.
 
+## When to use this
+
+Use this before choosing HTTP, messaging, events, queues, streams, shared data, or replication across ownership boundaries.
+
+## Decision to make
+
+Decide the interaction semantics first: who owns the decision, when completion is known, what failures mean, and how consumers recover or reconcile.
+
 ## Start from semantics
 
 Before selecting HTTP, messaging, events, queues, or streams, define:
@@ -35,7 +43,11 @@ Synchronous integration simplifies immediate outcomes but propagates latency and
 - Retrying operations without stable identity and idempotency.
 - Publishing internal state changes as permanent public contracts.
 
-## Review evidence
+## Example
+
+Weak integration publishes events for every internal state change and calls it loose coupling. Better integration publishes a stable business fact after the owner has decided it, with identity, ordering, retry, and consumer compatibility rules defined.
+
+## Evidence to keep
 
 - [ ] Consistency and completion semantics are explicit.
 - [ ] Duplicate, ordering, retry, and recovery behavior has an owner.

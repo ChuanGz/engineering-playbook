@@ -4,6 +4,14 @@
 
 Use durable reasoning to constrain structural choices without presenting preferences or named patterns as universally correct.
 
+## When to use this
+
+Use this when defining, reviewing, or retiring architecture principles that guide multiple designs or teams.
+
+## Decision to make
+
+Decide whether a statement is a real principle, a context-specific decision, or a technology preference being promoted without enough evidence.
+
 ## Principle test
 
 Treat guidance as an architecture principle only when it:
@@ -35,7 +43,11 @@ Principles increase consistency and review speed, but too many constrain local j
 - Keeping principles that conflict without priority or exception rules.
 - Assessing compliance by diagram shape instead of change and runtime behavior.
 
-## Review evidence
+## Example
+
+Weak principle: "Use event-driven architecture." Better principle: "Do not let one boundary write another boundary's authoritative state; use events only after the owning boundary has made a durable decision."
+
+## Evidence to keep
 
 - [ ] Each principle names the failure or quality it protects.
 - [ ] Applicability boundaries and costs are explicit.

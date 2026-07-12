@@ -4,6 +4,14 @@
 
 Choose safe initial limits and identify the first likely bottlenecks without pretending uncertain forecasts are production facts.
 
+## When to use this
+
+Use this before choosing capacity-sensitive design defaults, scaling strategy, load-test targets, storage plans, queue limits, or operational alerts.
+
+## Decision to make
+
+Decide which capacity assumption can shape the design now, which assumption needs measurement, and what trigger will reopen the estimate.
+
 ## Evidence model
 
 Collect or label assumptions for:
@@ -38,7 +46,11 @@ Excess capacity buys resilience and response time but increases cost and can hid
 - Using business growth targets as observed demand.
 - Estimating infrastructure capacity without dependency limits.
 
-## Review evidence
+## Example
+
+Weak estimate: "We need to handle many users." Better estimate: "Peak upload is expected at 200 files per minute for 30 minutes, payload p95 is 8 MB, and the first likely bottleneck is virus scanning concurrency; load test that path before increasing queue limits."
+
+## Evidence to keep
 
 - [ ] Inputs, sources, ranges, and time windows are recorded.
 - [ ] Peak and degraded-mode assumptions are included.
