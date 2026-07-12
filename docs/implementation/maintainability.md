@@ -4,6 +4,14 @@
 
 Determine whether the implementation can absorb expected changes safely without relying on undocumented knowledge or broad regression effort.
 
+## When to use this
+
+Use this when a change feels slow, risky, hard to review, hard to diagnose, or likely to repeat. It is also useful before adding flexibility that may become permanent complexity.
+
+## Decision to make
+
+Decide whether to keep the current structure, simplify it, add a boundary, or postpone change until real pressure appears.
+
 ## Evidence of maintainability
 
 Use observable signals:
@@ -38,7 +46,11 @@ Preparing for evidenced change reduces future work but increases current surface
 - Keeping obsolete compatibility paths without consumers.
 - Measuring quality only through static-analysis scores.
 
-## Review evidence
+## Example
+
+Weak maintainability argument: "This needs a plugin architecture because we may add providers later." Better argument: "Three committed providers differ only in authentication and mapping; isolate those variation points and keep shared business rules direct."
+
+## Evidence to keep
 
 - [ ] Expected change axes come from real evidence.
 - [ ] Complexity protects a named decision or dependency.
