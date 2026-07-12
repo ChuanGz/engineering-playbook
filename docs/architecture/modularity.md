@@ -4,6 +4,14 @@
 
 Contain the cost of change by making responsibilities cohesive and dependencies visible, directional, and enforceable.
 
+## When to use this
+
+Use this when code changes spread across unrelated areas, shared libraries become dumping grounds, cycles appear, or tests require too much unrelated setup.
+
+## Decision to make
+
+Decide which responsibilities belong together, which dependencies should point inward or outward, and which boundary rules need enforcement.
+
 ## What to measure
 
 Evaluate modularity through behavior rather than folder count:
@@ -36,7 +44,11 @@ Isolation improves independent change and testing but introduces mapping, contra
 - Measuring modularity by project count.
 - Using events internally to conceal cyclic ownership.
 
-## Review evidence
+## Example
+
+Weak modularity creates more projects but lets every project reference shared internals. Better modularity gives each module a coherent decision set, a narrow public contract, and an enforceable dependency rule.
+
+## Evidence to keep
 
 - [ ] Each module owns a coherent set of decisions and state.
 - [ ] Public contracts are smaller and more stable than internals.
