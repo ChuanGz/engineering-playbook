@@ -4,6 +4,14 @@
 
 Choose a change and integration workflow that preserves intent, enables effective review, and allows the team to recover without unnecessary branch ceremony.
 
+## When to use this
+
+Use this when choosing branch policy, commit expectations, merge rules, emergency paths, or release traceability requirements.
+
+## Decision to make
+
+Decide how changes become reviewable, how integration risk is exposed early, and how source history supports audit, recovery, and release traceability.
+
 ## Workflow requirements
 
 A reviewable workflow defines:
@@ -37,7 +45,11 @@ More workflow controls reduce unauthorized or weakly reviewed changes but increa
 - Emergency paths that bypass traceability and never receive review.
 - Merge policies that exist only as convention and cannot be enforced.
 
-## Review evidence
+## Example
+
+Weak workflow keeps environment branches alive for weeks and discovers conflicts during release. Better workflow integrates small reviewed changes frequently, protects the default branch with meaningful checks, and maps deployed artifacts back to immutable source revisions.
+
+## Evidence to keep
 
 - [ ] Each integrated change has an outcome, owner, and review evidence.
 - [ ] Default-branch controls match actual delivery risk.
