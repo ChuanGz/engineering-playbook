@@ -4,6 +4,14 @@
 
 Design a pipeline that produces repeatable evidence and promotes the same immutable artifact through controlled delivery stages.
 
+## When to use this
+
+Use this when designing, reviewing, or changing build, test, deployment, promotion, approval, or environment workflows.
+
+## Decision to make
+
+Decide which pipeline stages produce release evidence, which artifact is promoted, who can approve or bypass, and how failures lead to correction or recovery.
+
 ## Principles
 
 ### Build once, promote deliberately
@@ -41,7 +49,11 @@ More automation improves consistency but can accelerate incorrect decisions. Man
 - Storing long-lived production credentials in workflow configuration.
 - Adding approval steps whose reviewers lack context or authority.
 
-## Review evidence
+## Example
+
+Weak pipeline rebuilds separately for staging and production, then asks for manual approval without showing risk evidence. Better pipeline builds once, promotes the same artifact, validates environment configuration, and gives approvers the evidence tied to release risk.
+
+## Evidence to keep
 
 - [ ] Every stage produces evidence used by a named decision.
 - [ ] Artifact identity remains stable through promotion.

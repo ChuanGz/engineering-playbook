@@ -4,6 +4,14 @@
 
 Decide which automated or manual evidence blocks integration, promotion, or release because proceeding would exceed accepted risk.
 
+## When to use this
+
+Use this when adding, removing, promoting, bypassing, or reviewing a required check in development, CI, deployment, or release.
+
+## Decision to make
+
+Decide whether a check should block progress, warn, run on a schedule, or be removed because its signal no longer changes risk.
+
 ## Gate contract
 
 For every required gate, state:
@@ -32,7 +40,11 @@ Strong gates reduce known risk but extend feedback and can create unsafe bypass 
 - Allowing permanent bypasses without risk acceptance.
 - Adding a gate after one incident without confirming recurrence or coverage.
 
-## Review evidence
+## Example
+
+Weak gate blocks release on an arbitrary coverage number while the critical migration path has no validation. Better gate blocks on migration compatibility and rollback evidence because those failures exceed accepted risk.
+
+## Evidence to keep
 
 - [ ] Each gate maps to a consequential failure or mandatory policy.
 - [ ] Pass criteria are objective and reproducible.

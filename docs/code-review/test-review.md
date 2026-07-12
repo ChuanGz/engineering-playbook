@@ -4,6 +4,10 @@
 
 Determine whether the change includes credible evidence for the failures it can introduce, without preserving implementation details as tests.
 
+## When to use this
+
+Use this when a PR changes behavior, boundaries, data, dependencies, configuration, migration, or recovery expectations.
+
 ## Review method
 
 1. List the changed behaviors, boundaries, data, and failure paths.
@@ -26,7 +30,11 @@ More test cases can improve confidence but also increase suite cost and false fa
 - Rewriting tests to match internals while weakening outcome evidence.
 - Ignoring migration, configuration, cancellation, or recovery behavior.
 
-## Review evidence
+## Example
+
+Weak test review accepts higher coverage around mocked repository calls. Stronger review asks whether the test would fail if the real transaction, authorization rule, serialization, or recovery behavior broke.
+
+## Evidence to keep
 
 - [ ] Tests map to changed risks and required outcomes.
 - [ ] The test boundary includes the source of failure.

@@ -4,6 +4,14 @@
 
 Improve internal structure while preserving required behavior and controlling the delivery risk of the change.
 
+## When to use this
+
+Use this when current structure makes a real change, defect fix, test, dependency move, or diagnosis harder than it should be. Do not use it as a general cleanup label.
+
+## Decision to make
+
+Decide whether the structural change reduces a named risk or change cost enough to justify its delivery risk.
+
 ## Entry criteria
 
 Refactor when evidence shows:
@@ -36,7 +44,11 @@ Incremental refactoring limits risk and preserves feedback but may temporarily i
 - Introducing generic abstractions before two real variations exist.
 - Leaving old and new paths indefinitely.
 
-## Exit evidence
+## Example
+
+Weak refactor: "Move everything into a new architecture because it is cleaner." Better refactor: "Payment validation rules are duplicated in three flows and caused two defects; move the rules behind the owning boundary while preserving behavior tests before changing callers."
+
+## Evidence to keep
 
 - [ ] Required behavior is protected independently from implementation shape.
 - [ ] The original change, defect, or diagnostic problem is reduced.
