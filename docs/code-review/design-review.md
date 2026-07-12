@@ -4,6 +4,10 @@
 
 Determine whether a change fits the accepted architecture and keeps future changes local without adding speculative abstraction.
 
+## When to use this
+
+Use this when a code change moves responsibilities, adds abstractions, touches ownership boundaries, introduces shared models, or changes dependency direction.
+
 ## Review method
 
 1. Identify the responsibility and boundary being changed.
@@ -26,7 +30,11 @@ Local consistency lowers comprehension cost, but preserving a weak pattern can c
 - Moving logic into generic helpers that erase ownership.
 - Blocking a bounded change on hypothetical future scale.
 
-## Review evidence
+## Example
+
+Weak review says "use the same pattern as the other module." Stronger review asks whether the same ownership, change pressure, dependency direction, and operational constraints actually apply to this change.
+
+## Evidence to keep
 
 - [ ] Responsibility, state authority, and dependency direction remain explicit.
 - [ ] New abstractions protect a current decision or variation.

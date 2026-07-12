@@ -4,6 +4,10 @@
 
 Detect whether independently evolving providers and consumers still agree on request, response, event, error, and compatibility semantics.
 
+## When to use this
+
+Use this when provider and consumer change independently and integration failure would otherwise appear late, especially across service, team, package, or external API boundaries.
+
 ## When contract tests add value
 
 Use contract tests when consumers release independently, provider internals should remain private, and integration failures would otherwise appear late. Do not add them when producer and consumer share one release boundary and an integration test gives clearer evidence at lower cost.
@@ -39,7 +43,11 @@ Contract tests enable independent change but create governance and tooling overh
 - Allowing stale consumer contracts to block safe provider change.
 - Ignoring error and authorization behavior.
 
-## Review evidence
+## Example
+
+Weak contract freezes the provider payload because it is easy to snapshot. Better contract records the fields, error outcomes, authorization behavior, and compatibility assumptions the active consumer actually uses.
+
+## Evidence to keep
 
 - [ ] Each expectation traces to an active consumer behavior.
 - [ ] Provider verification runs before incompatible deployment.

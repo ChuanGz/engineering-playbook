@@ -4,6 +4,10 @@
 
 Decide whether a change is safe and understandable enough to merge, and identify the smallest action needed when it is not.
 
+## When to use this
+
+Use this to set review behavior for pull requests, pairing, design-in-code discussions, or maintainer decisions where findings need clear severity and ownership.
+
 ## Principles
 
 ### Review risk before style
@@ -33,7 +37,11 @@ Deep review reduces escaped risk but increases lead time and context switching. 
 - Expanding scope through unrelated redesign requests.
 - Leaving ambiguous comments such as “clean this up” without a pass condition.
 
-## Review evidence
+## Example
+
+Weak comment: "This is messy." Better comment: "This mixes authorization and formatting, so the authorization rule can be bypassed in the batch path. Please move the rule to the owning boundary or add evidence that both paths enforce it."
+
+## Evidence to keep
 
 - [ ] Blocking comments identify a concrete risk or unmet requirement.
 - [ ] Suggestions and preferences are not presented as mandatory standards.

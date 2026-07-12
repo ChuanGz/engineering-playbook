@@ -4,6 +4,10 @@
 
 Choose evidence that can reveal a consequential failure before users or operators discover it.
 
+## When to use this
+
+Use this when selecting a test boundary, reviewing a test plan, or challenging a suite that is expensive but does not clearly reduce release risk.
+
 ## Principles
 
 ### Test behavior and risk
@@ -33,7 +37,11 @@ More realistic tests increase confidence in integration behavior but cost more t
 - Mocking the dependency behavior the test is meant to verify.
 - Keeping flaky tests in a required gate until failures lose meaning.
 
-## Review evidence
+## Example
+
+Weak principle in action: add tests until coverage reaches a target. Better principle in action: identify the failure that would hurt users or operations, then choose the smallest boundary that can expose it.
+
+## Evidence to keep
 
 - [ ] Each test protects a named behavior or failure risk.
 - [ ] The selected boundary includes the source of that risk.

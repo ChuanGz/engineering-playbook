@@ -4,6 +4,10 @@
 
 Protect deterministic rules and state transitions with fast evidence that remains stable when unrelated implementation details change.
 
+## When to use this
+
+Use this when the risk is inside deterministic behavior: rules, calculations, validation, state transitions, branching, or small policy decisions.
+
 ## Appropriate boundary
 
 Use a unit test when the behavior can be evaluated without relying on real infrastructure, serialization, framework wiring, or network semantics. The unit may be a function, class, aggregate, or coherent module—not necessarily one method.
@@ -30,7 +34,11 @@ Unit tests are fast and diagnostic but cannot validate configuration, persistenc
 - Reproducing production calculations inside expected values.
 - Making time, randomness, or concurrency implicit and flaky.
 
-## Review evidence
+## Example
+
+Weak unit test verifies that `calculate()` calls three helpers. Better unit test proves that an expired discount is rejected, boundary dates are handled, and the expected state transition is emitted.
+
+## Evidence to keep
 
 - [ ] The test name identifies behavior and relevant condition.
 - [ ] Assertions remain valid after safe internal refactoring.
