@@ -35,6 +35,28 @@ Do not repeat all three labels in every guide. Use the progression only when it 
 
 Prefer a plain-language explanation before an acronym or framework term. Preserve a precise technical term when simplifying it would change the decision.
 
+## Practical application style
+
+Engineering guidance may serve developers, product practitioners, leaders, business readers, or operations. It should still be written so the practical engineering decision is easy to find, remember, and apply.
+
+Use this sequence when a guide risks becoming abstract:
+
+1. **Situation:** when the reader should use the guidance.
+2. **Decision:** the judgment or choice being made.
+3. **Consequence:** what can go wrong if the decision is weak.
+4. **Action:** the smallest useful steps to take next.
+5. **Example:** a bounded illustration, weak/better comparison, or common failure.
+6. **Evidence:** the proof, note, test, decision record, signal, or owner that remains.
+
+Do not force these labels into every page. Preserve local structure when it already lets the reader find the situation, decision, consequence, action, and evidence quickly.
+
+Adjust framing by reader:
+
+- Developers need concrete application, failure behavior, review questions, and evidence.
+- Product readers need outcome, scope, assumptions, and validation consequence.
+- Leaders and business readers need ownership, exposure, trade-offs, and risk acceptance.
+- Operations readers need signals, authority, recovery path, and follow-up evidence.
+
 ## Contextual rules
 
 - Use `must` only for safety, compliance, an accepted contract, or another necessary condition with a visible enforcement owner or mechanism.
@@ -59,6 +81,7 @@ Prefer a plain-language explanation before an acronym or framework term. Preserv
 
 - [ ] The intended reader and next action are clear.
 - [ ] A reader can find the relevant outcome without reading the document from beginning to end.
+- [ ] The situation, decision, consequence, action, and evidence are discoverable without relying on theory-first prose.
 - [ ] Mandatory rules, recommendations, and options are distinguishable.
 - [ ] Terms and claims have one unambiguous meaning in context.
 - [ ] Examples and maxims expose judgment without pretending to be evidence.

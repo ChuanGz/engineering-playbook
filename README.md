@@ -4,6 +4,35 @@
 
 This playbook helps people make better software decisions together. You do not need to read it from beginning to end, follow one delivery framework, or hold an engineering title to use it.
 
+## Repository focus
+
+The repository focuses on engineering decisions that recur across software work, regardless of stack or delivery framework:
+
+| Focus domain | What the playbook helps decide |
+| --- | --- |
+| Requirement analysis | What outcome is being asked for, what is still uncertain, and what evidence makes work ready. |
+| System design | How constraints, quality needs, and trade-offs shape a testable design decision. |
+| Software architecture | Where ownership, boundaries, dependencies, integration, and evolution should sit. |
+| Implementation | How code stays understandable, changeable, correct, and explicit about failure behavior. |
+| Testing | Which evidence is credible for the failure risks that matter. |
+| Code review | Whether a specific change is safe, understandable, and sufficiently proven. |
+| Delivery | How a change moves to users with traceability, risk control, and recovery. |
+| Documentation | Which decisions, contracts, tasks, and recovery knowledge are worth maintaining. |
+| Ways of working | How the same decisions connect across real delivery situations and learning loops. |
+
+The goal is not to teach every engineering topic. The goal is to help a reader identify the decision in front of them, understand the consequence of getting it wrong, choose the smallest useful practice, and leave behind evidence that another person can review.
+
+## Presentation contract
+
+Content should be practical, not encyclopedic. Each guide should make the reader's next decision easier.
+
+- Start from a real situation, role, decision, or risk.
+- Explain the outcome and consequence before deep technical detail.
+- Keep one authoritative source for each decision; use indexes and journeys only for navigation.
+- Present trade-offs, evidence, owners, and review questions instead of universal rules.
+- Use examples as bounded illustrations, not invented proof.
+- Preserve framework neutrality: Scrum, Kanban, continuous flow, and hybrid teams can all apply the same decision guidance.
+
 ## The decision-to-learning loop
 
 This model answers: **How does the playbook move from a problem to better future decisions?**
@@ -23,15 +52,20 @@ flowchart LR
 
 The loop is the stable core. Guides and templates add only the reasoning or evidence needed at the current decision.
 
-## Start with what you need
+## Start with the work in front of you
 
-| If you need to... | Start here | Useful outcome |
+Use the smallest path that matches the work moment. The playbook serves developers, product practitioners, leaders, and business readers; it still keeps the writing concrete enough that an engineer can apply the guidance during real delivery work.
+
+| Work moment | Start here | Useful outcome |
 | --- | --- | --- |
-| Turn an unclear idea into workable scope | [Clarify an idea](docs/ways-of-working/README.md#1-from-an-unclear-idea-to-a-testable-slice) | A small, testable outcome with visible assumptions. |
-| Decide whether a risky change is ready | [Take a risky change to release](docs/ways-of-working/README.md#2-from-a-risky-change-to-a-safe-release) | Shared evidence for implementation, release, and recovery. |
-| Learn from a poor outcome or incident | [Learn without blame](docs/ways-of-working/README.md#3-from-an-outcome-to-a-learning-experiment) | One owned experiment with a success signal and review date. |
-| Find guidance for the current work step | [Follow the delivery flow](docs/ways-of-working/delivery-flow.md) | The relevant decision guide without adopting a new process. |
-| Look up a technical decision method | [Browse engineering domains](docs/README.md) | Detailed reasoning, trade-offs, and review evidence. |
+| An idea is valuable but unclear | [Clarify an idea](docs/ways-of-working/README.md#1-from-an-unclear-idea-to-a-testable-slice) | A small, testable outcome with visible assumptions. |
+| A requirement or scope decision feels ambiguous | [Requirement analysis](docs/requirement-analysis/README.md) | Shared language, visible uncertainty, and reviewable acceptance evidence. |
+| A solution has meaningful alternatives | [System design](docs/system-design/README.md) | A trade-off decision with explicit drivers, consequences, and owner. |
+| A code change needs safe implementation judgment | [Implementation](docs/implementation/README.md), [testing](docs/testing/README.md), and [code review](docs/code-review/README.md) | Correct behavior, credible evidence, and a reviewable merge decision. |
+| A risky change is moving toward users | [Take a risky change to release](docs/ways-of-working/README.md#2-from-a-risky-change-to-a-safe-release) | Shared evidence for implementation, release, and recovery. |
+| A poor outcome or incident needs learning | [Learn without blame](docs/ways-of-working/README.md#3-from-an-outcome-to-a-learning-experiment) | One owned experiment with a success signal and review date. |
+| You know the current delivery step | [Follow the delivery flow](docs/ways-of-working/delivery-flow.md) | The relevant decision guide without adopting a new process. |
+| You know the technical decision domain | [Browse engineering domains](docs/README.md) | Detailed reasoning, trade-offs, and review evidence. |
 
 ## Start with your role
 
